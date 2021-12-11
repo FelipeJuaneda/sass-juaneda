@@ -68,3 +68,34 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width:768px) {
+    /* Algo de Historia */
+    .contenedor-historia{
+        display: inline-block;
+        height: auto;
+    }
+    .contenedor-historia .titulo-historia{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-historia .imagen-cartel{
+        display: none;
+    }
+    .contenedor-historia .imagen-pasillo{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .contenedor-historia .parrafo-historia{
+        font-size: 1.5em;
+        padding: 0 20px;
+    }
+
+    /* DECORACION */
+    .decoracion .img-decoracion{
+        height: 50vh;
+    }
+
+}

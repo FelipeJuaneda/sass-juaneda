@@ -15,7 +15,6 @@
         justify-content: space-between;
         .img-logo{
             margin: 20px 20px;
-            width: 100%;
         }
         ul{
             margin: 15px 20px;
@@ -25,7 +24,7 @@
                 font-size: 1.4rem;
                 list-style: none;
                 position: relative;
-                ::before{
+                &::before{
                     content: "";
                     background: #FED766;
                     height: 3px;
@@ -35,7 +34,7 @@
                     bottom: -12px;
                     transition: 0.3s ease-out;
                 }
-                :hover::before{
+                &:hover::before{
                     width: 100%;
                 }
                 a{
@@ -48,3 +47,12 @@
 
 }
 
+@media screen and (max-width:768px) {
+    .cabeza .navegador .img-logo{
+        width: 100%;
+    }
+    .cabeza .navegador ul li{
+        font-size: 20px;
+        display:block
+    }
+}
