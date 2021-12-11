@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,24 +15,25 @@
     <link rel="shortcut icon" href="../imagenes/colores1.ico">
     <title>Locales</title>
 </head>
+
 <body>
     <header class="cabeza">
-        <nav class="navegador"> 
+        <nav class="navegador">
             <a class="link-logo" href="../index.html">
                 <img src="../imagenes/logocartel.jpg" alt="logo" class="img-logo">
-            </a> 
+            </a>
 
-            <ul> 
-                <li> 
-                    <a href="../index.html">Inicio</a> 
-                </li> 
-                <li> 
-                    <a href="nosotros.html">Nosotros</a> 
-                </li> 
-                <li> 
-                    <a href="locales.html">Locales</a> 
-                </li> 
-                <li> 
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="locales.html">Locales</a>
+                </li>
+                <li>
                     <a href="servicios.html">Servicios</a>
                 </li>
                 <li>
@@ -40,47 +42,110 @@
             </ul>
         </nav>
     </header>
-    <h1>Locales</h1>
-    <section class="contenedor-locali">
-        <h2 class="subtitle">Local 1</h2>
-        <img class="img-locali" src="../imagenes/local1.jpeg" alt="">
-        <div class="texto-locali">
-            <p>Local ubicado en el primer patio, con un tamaño de 4mts x 3mts</p>
-        </div>
-        <div class="imag-varias">
-            <img class="img-local1" src="https://dummyimage.com/150x150/000/fff" alt="">
-            <img class="img-local1" src="https://dummyimage.com/150x150/000/fff" alt="">
-            <img class="img-local1" src="https://dummyimage.com/150x150/000/fff" alt="">
-            <img class="img-local1" src="https://dummyimage.com/150x150/000/fff" alt="">
-        </div>
-    </section>
-    <section class="contenedor-localii">
-        <div class="imag-varias2">
-            <img class="img-local2" src="https://dummyimage.com/150x150/000/fff" alt="">
-            <img class="img-local2" src="https://dummyimage.com/150x150/000/fff" alt="">
-            <img class="img-local2" src="https://dummyimage.com/150x150/000/fff" alt="">
-            <img class="img-local2" src="https://dummyimage.com/150x150/000/fff" alt="">
-        </div>
-        <div class="texto-localii">
-            <p>Local ubicado sobre la valle Belgrano al 779, con un tamaño de 7mts x 5mts</p>
-        </div>
-        <img class="img-localii" src="../imagenes/viluz.jpeg" alt="">
-        <h2 class="subtitle">Local 2</h2>
-    </section>
+
+    <h1 class="text-center mt-3">Locales</h1>
+
+    <main class="locales-carousele">
+        <section class="local-i m-5">
+            <div class="container w-25 ">
+                <h3>Local 1</h3>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imagenes/local1.jpeg" class="d-block w-100 mb-3" alt="..." height="500px" width="250px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>LOCAL 1</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dummyimage.com/300x400/000/fff" class="d-block w-100 mb-3" alt="..." height="500px" width="250px">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dummyimage.com/300x400/000/fff" class="d-block w-100 mb-3" alt="..." height="500px" width="250px">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="local-ii m-5">
+            <div class="container w-25 ">
+                <h3>Local 1</h3>
+                <div id="localii" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#localii" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#localii" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#localii" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imagenes/viluz.jpeg" class="d-block w-100 mb-3" alt="..." height="500px" width="250px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>LOCAL 2</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dummyimage.com/300x400/000/fff" class="d-block w-100 mb-3" alt="..." height="500px" width="250px">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dummyimage.com/300x400/000/fff" class="d-block w-100 mb-3" alt="..." height="500px" width="250px">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#localii" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#localii" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
 
     <footer>
         <div class="volver-arriba">
-            <a href="#">Ir arriba!</a>
+            <a class="link-hover" href="#">Ir arriba!</a>
         </div>
         <div class="footer-felipe">
-            <p class="pagcreada">Pagina creada por <a href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">Felipe</a></p>
+            <p class="pagcreada">Pagina creada por <a class="link-hover"
+                    href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">Felipe</a></p>
         </div>
 
         <div class="footer-redes">
             <h3 class="seguinos">Seguinos en nuestras redes</h3>
             <div class="footer-imgs">
                 <a href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">
-                    <img class="insta" src="../imagenes/instagram.png" alt="" >
+                    <img class="insta" src="../imagenes/instagram.png" alt="">
                 </a>
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank">
                     <img class="whats" src="../imagenes/whatsapp.png">
@@ -88,7 +153,7 @@
                 <a href="https://www.facebook.com/felipe.juaneda/" target="_blank">
                     <img class="face" src="../imagenes/face.png" alt="">
             </div>
-        
+
         </div>
     </footer>
 
@@ -96,4 +161,5 @@
     <!-- Link de JS -->
     <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </body>
+
 </html>
