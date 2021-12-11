@@ -80,6 +80,8 @@ footer {
     align-items: center;
     font-size: 20px;
     justify-content: center; }
+    footer .footer-felipe .pagcreada {
+      color: #ccc; }
     footer .footer-felipe .link-hover {
       text-decoration: none;
       color: #ff8c42; }
@@ -89,7 +91,8 @@ footer {
     width: 100%;
     font-size: 20px; }
     footer .footer-redes .seguinos {
-      text-align: center; }
+      text-align: center;
+      color: #ccc; }
     footer .footer-redes .footer-imgs {
       display: flex;
       justify-content: space-evenly; }
@@ -207,3 +210,29 @@ footer {
   /* DECORACION */
   .decoracion .img-decoracion {
     height: 50vh; } }
+
+/* Sobre nosotros */
+h1 {
+  color: #2B303A; }
+
+.container {
+  background: #e5b25d;
+  background: linear-gradient(0deg, #e5b25d 13%, #d68c4e 77%); }
+  .container .row .col-12 .img-gral {
+    opacity: 0.9; }
+    .container .row .col-12 .img-gral:hover {
+      transform: scale(1.1);
+      transition: 1s; }
+      @media screen and (max-width: 768px) {
+        .container .row .col-12 .img-gral:hover {
+          transform: scale(0.9);
+          transition: 1s; } }
+
+/* Carousele Decorativo */
+.container-fluid {
+  background: #d68c4e;
+  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 71%); }
+  @media screen and (max-width: 768px) {
+    .container-fluid .row .col .carousel .carousel-inner {
+      height: 40vh;
+      width: 100%; } }

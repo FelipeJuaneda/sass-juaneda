@@ -1,0 +1,51 @@
+/* Sobre nosotros */
+
+h1{
+    color: $color-titulo;
+}
+.container{
+    background: rgb(229,178,93);
+    background: linear-gradient(0deg, rgba(229,178,93,1) 13%, rgba(214,140,78,1) 77%);
+    .row{
+        
+        .col-12{
+
+            .img-gral{
+                opacity: 0.9;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 1s;
+                    @media screen and (max-width:768px){
+                        transform: scale(.9);
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Carousele Decorativo */
+
+.container-fluid{
+    background: rgb(214,140,78);
+    background: linear-gradient(0deg, rgba(214,140,78,1) 13%, rgba(229,178,93,1) 71%);
+    .row{
+        .col{
+            .carousel{
+                .carousel-inner{
+                    @media screen and (max-width:768px) {
+                        height: 40vh;
+                        width: 100%;
+                    }
+                    
+                }
+                
+                
+            }
+        }
+    }
+}
+
+
+
