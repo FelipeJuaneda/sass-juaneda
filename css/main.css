@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+* {
+  padding: 0%;
+  margin: 0;
+  font-family: 'Dancing Script', cursive; }
+
+body {
+  background-image: url(../imagenes/parednaranja.jpg);
+  background-position: bottom; }
+
+.cabeza {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url(../imagenes/paredverde.jpg);
+  background-size: cover; }
+  .cabeza .navegador {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .cabeza .navegador .img-logo {
+      margin: 20px 20px;
+      width: 100%; }
+    .cabeza .navegador ul {
+      margin: 15px 20px; }
+      .cabeza .navegador ul li {
+        display: inline-block;
+        margin: 10px 20px;
+        font-size: 1.4rem;
+        list-style: none;
+        position: relative; }
+        .cabeza .navegador ul li ::before {
+          content: "";
+          background: #FED766;
+          height: 3px;
+          width: 0%;
+          position: absolute;
+          left: 0%;
+          bottom: -12px;
+          transition: 0.3s ease-out; }
+        .cabeza .navegador ul li :hover::before {
+          width: 100%; }
+        .cabeza .navegador ul li a {
+          text-decoration: none;
+          color: #591F0A; }

@@ -1,0 +1,50 @@
+.cabeza{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-image:url(../imagenes/paredverde.jpg);
+    background-size: cover;
+    .navegador{
+        grid-column-start: 1;
+        grid-column-end: 12;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .img-logo{
+            margin: 20px 20px;
+            width: 100%;
+        }
+        ul{
+            margin: 15px 20px;
+            li{
+                display: inline-block;
+                margin: 10px 20px;
+                font-size: 1.4rem;
+                list-style: none;
+                position: relative;
+                ::before{
+                    content: "";
+                    background: #FED766;
+                    height: 3px;
+                    width: 0%;
+                    position: absolute;
+                    left: 0%;
+                    bottom: -12px;
+                    transition: 0.3s ease-out;
+                }
+                :hover::before{
+                    width: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: #591F0A;
+                }
+            }
+        }
+    }
+
+}
+
