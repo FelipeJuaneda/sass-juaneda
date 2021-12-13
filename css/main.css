@@ -236,3 +236,18 @@ h1 {
     .container-fluid .row .col .carousel .carousel-inner {
       height: 40vh;
       width: 100%; } }
+
+.locales-carousel {
+  background: #d68c4e;
+  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 71%);
+  height: 100%; }
+  .locales-carousel .local-i .container-fluid {
+    width: 40%; }
+    @media screen and (max-width: 576px) {
+      .locales-carousel .local-i .container-fluid {
+        width: 90%; } }
+  .locales-carousel .local-ii .container-fluid {
+    width: 40%; }
+    @media screen and (max-width: 576px) {
+      .locales-carousel .local-ii .container-fluid {
+        width: 90%; } }
