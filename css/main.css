@@ -251,3 +251,22 @@ h1 {
     @media screen and (max-width: 576px) {
       .locales-carousel .local-ii .container-fluid {
         width: 90%; } }
+
+/* Imagen con texto */
+.contenedor-carta {
+  background: #e5b25d;
+  background: linear-gradient(0deg, #e5b25d 13%, #d68c4e 71%); }
+  .contenedor-carta .carta-letrero {
+    display: flex;
+    justify-content: center; }
+    .contenedor-carta .carta-letrero .card {
+      width: 75%; }
+      @media screen and (max-width: 768px) {
+        .contenedor-carta .carta-letrero .card {
+          width: 100%; } }
+      .contenedor-carta .carta-letrero .card .card-img-overlay {
+        font-size: 30px;
+        color: #000300; }
+        @media screen and (max-width: 576px) {
+          .contenedor-carta .carta-letrero .card .card-img-overlay {
+            font-size: 1em; } }

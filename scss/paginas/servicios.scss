@@ -1,0 +1,23 @@
+
+/* Imagen con texto */
+.contenedor-carta{
+    background: rgb(229,178,93);
+    background: linear-gradient(0deg, rgba(229,178,93,1) 13%, rgba(214,140,78,1) 71%);
+    .carta-letrero{
+        display: flex;
+        justify-content: center;
+        .card{
+            width: 75%;
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+            .card-img-overlay{
+                font-size: $texto-parrafo;
+                color: #000300;
+                @media screen and (max-width:576px) {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

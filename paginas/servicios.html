@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +14,25 @@
     <link rel="shortcut icon" href="../imagenes/colores1.ico">
     <title>Servicios</title>
 </head>
+
 <body>
     <header class="cabeza">
-        <nav class="navegador"> 
+        <nav class="navegador">
             <a class="link-logo" href="../index.html">
                 <img src="../imagenes/logocartel.jpg" alt="logo" class="img-logo">
-            </a> 
+            </a>
 
-            <ul> 
-                <li> 
-                    <a href="../index.html">Inicio</a> 
-                </li> 
-                <li> 
-                    <a href="nosotros.html">Nosotros</a> 
-                </li> 
-                <li> 
-                    <a href="locales.html">Locales</a> 
-                </li> 
-                <li> 
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="locales.html">Locales</a>
+                </li>
+                <li>
                     <a href="servicios.html">Servicios</a>
                 </li>
                 <li>
@@ -40,20 +42,39 @@
         </nav>
     </header>
 
-    <h1>Servicios...</h1>
-    <h3 class="subtitulo">Servicio de limpieza</h3>
-    <section class="contenedor-servicios">
-        <img src="https://dummyimage.com/400x300/000/fff" alt="" class="img-limpia">
+    <!-- Servicios titulo e imgs -->
 
-        <div class="texto-servicio">
-            <p>Servicio de limpieza todos los dias incluyendo arreglos en fachada y patios internos</p>
-        </div>
-        <img src="https://dummyimage.com/400x300/000/fff" alt="baño" class="img-baño">
-        
-        <div class="contenedor-decora">
-            <img class="decora" src="../imagenes/ancho.jpg" alt="decoracion">
+    <main class="container-fluid">
+        <h1 class="text-center">Servicios</h1>
+        <section class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-4 col-md-6 d-flex justify-content-center">
+                <img class="img-gral img-fluid m-4" src="https://dummyimage.com/400x300/000/fff" alt="">
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 ">
+                <p class="text-center fs-4 fw-bold m-4">Servicio de limpieza todos los dias incluyendo arreglos en fachada y
+                    patios internos</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img class="img-gral img-fluid m-4" src="https://dummyimage.com/400x300/000/fff" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!-- Imagen con texto -->
+
+
+    <section class="contenedor-carta container-fluid">
+        <div class="carta-letrero">
+            <div class="card bg-dark text-white m-3">
+                <img src="../imagenes/letrerocolgando.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title">Letrero antiguo</h3>
+                    <p class="card-text">Cuenta un poco de su historia y tiempo de antiguedad</p>
+                </div>
+            </div>
         </div>
     </section>
+
 
 
 
@@ -62,14 +83,15 @@
             <a href="#">Ir arriba!</a>
         </div>
         <div class="footer-felipe">
-            <p class="pagcreada">Pagina creada por <a href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">Felipe</a></p>
+            <p class="pagcreada">Pagina creada por <a href="https://www.instagram.com/felipejuaneda/?hl=es"
+                    target="_blank">Felipe</a></p>
         </div>
 
         <div class="footer-redes">
             <h3 class="seguinos">Seguinos en nuestras redes</h3>
             <div class="footer-imgs">
                 <a href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">
-                    <img class="insta" src="../imagenes/instagram.png" alt="" >
+                    <img class="insta" src="../imagenes/instagram.png" alt="">
                 </a>
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank">
                     <img class="whats" src="../imagenes/whatsapp.png">
@@ -77,14 +99,15 @@
                 <a href="https://www.facebook.com/felipe.juaneda/" target="_blank">
                     <img class="face" src="../imagenes/face.png" alt="">
             </div>
-        
+
         </div>
     </footer>
 
 
 
-    
+
     <!-- Link de JS -->
     <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </body>
+
 </html>
