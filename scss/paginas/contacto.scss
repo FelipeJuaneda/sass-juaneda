@@ -1,0 +1,38 @@
+/* Formulario */
+.contenedor-formulario{
+    background: rgb(214,140,78);
+    background: linear-gradient(0deg, rgba(214,140,78,1) 13%, rgba(229,178,93,1) 92%);
+    .formulario{
+        .form-style{
+            width: 50%;
+            margin: auto;
+            @media screen and (max-width:768px) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+/* Ubicacion */
+
+.contenedor-ubicacion{
+    background: rgb(229,178,93);
+    .container-fluid{
+        .row{
+            .col-2{
+                .img-ubici{
+                    @media screen and (max-width:768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .col-8{
+            .iframe-mapa{
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

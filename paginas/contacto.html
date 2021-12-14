@@ -43,26 +43,70 @@
         </nav>
     </header>
 
-    <h1>Contacto</h1>
-    <section class="formulario">
-        <h3 class="titulo-comentario">Envianos tu Comentario!</h3>
-        <form class="form-comentario">
-            <input type="text" placeholder="Nombre" name="nombre" id="nombre">
-            <input type="text" placeholder="Apellido" name="apellido" id="apellido">
-            <input type="number" placeholder="Telefono" name="telefono" id="telefono">
-            <input type="email" placeholder="E-mail" name="email" id="email">
-            <textarea placeholder="Consulta" name="consulta" id="consulta"></textarea>
-            <input class="submit" type="submit" value="Enviar comentario">
-        </form>
-    </section>
+    <!-- Titulo y formulario -->
 
-    <section class="ubicacion">
-        <h3 class="subtitulo-ubic">Ubicacion!</h3>
-        <img class="img-ubic" src="../imagenes/ubic.png" alt="">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6467748690548!2d-64.1940696848518!3d-31.423856681401567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28633a360b5%3A0x941372e4f44cc230!2sBelgrano%20773%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1636132240638!5m2!1ses-419!2sar"
-            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <img class=img-ubicizq src="../imagenes/ubic.png" alt="">
+    <main class="contenedor-formulario">
+        <h1 class="text-center">Contacto</h1>
+        <section class="formulario">
+            <form class="form-style">
+                <!-- 2 columas para nombre y apellido -->
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input placeholder="Nombre" type="text" id="form6Example1" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input placeholder="Apellido" type="text" id="form6Example2" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Numero input -->
+                <div class="form-outline mb-5">
+                    <input placeholder="Numero" type="number" id="numero" class="form-control" />
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-5">
+                    <input placeholder="Email" type="email" id="email" class="form-control" />
+                </div>
+
+
+                <!-- Consulta input -->
+                <div class="form-outline mb-5">
+                    <textarea placeholder="Consulta" class="form-control" id="consulta" rows="4"></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-warning btn-block mb-5">Enviar Consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- UBICACION -->
+
+    <section class="contenedor-ubicacion">
+        <h2 class="text-center">Ubicacion!</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 m-0 p-0">
+                    <div class="d-flex justify-content-end"><img class="img-ubici" src="../imagenes/ubic.png" alt=""
+                            width="25%"></div>
+                </div>
+                <div class="col-8">
+                    <div class="iframe-mapa"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.64694106271!2d-64.19406968530612!3d-31.423852103756463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28633a360b5%3A0x941372e4f44cc230!2sBelgrano%20773%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1638828775348!5m2!1ses!2sar"
+                            width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-2 m-0 p-0">
+                    <div class="d-flex justify-content-start"><img class="img-ubici" src="../imagenes/ubic.png" alt=""
+                            width="25%"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->

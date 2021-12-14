@@ -1,3 +1,23 @@
+/* Servicios titulo e imgs */
+
+.container-fluid{
+    .row{
+        .col-12{
+            .img-gral{
+                width: 80%;
+                opacity: .8;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 1s;
+                    @media screen and (max-width:768px){
+                        transform: scale(.9);
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Imagen con texto */
 .contenedor-carta{

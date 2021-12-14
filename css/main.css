@@ -252,6 +252,18 @@ h1 {
       .locales-carousel .local-ii .container-fluid {
         width: 90%; } }
 
+/* Servicios titulo e imgs */
+.container-fluid .row .col-12 .img-gral {
+  width: 80%;
+  opacity: .8; }
+  .container-fluid .row .col-12 .img-gral:hover {
+    transform: scale(1.1);
+    transition: 1s; }
+    @media screen and (max-width: 768px) {
+      .container-fluid .row .col-12 .img-gral:hover {
+        transform: scale(0.9);
+        transition: 1s; } }
+
 /* Imagen con texto */
 .contenedor-carta {
   background: #e5b25d;
@@ -270,3 +282,24 @@ h1 {
         @media screen and (max-width: 576px) {
           .contenedor-carta .carta-letrero .card .card-img-overlay {
             font-size: 1em; } }
+
+/* Formulario */
+.contenedor-formulario {
+  background: #d68c4e;
+  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 92%); }
+  .contenedor-formulario .formulario .form-style {
+    width: 50%;
+    margin: auto; }
+    @media screen and (max-width: 768px) {
+      .contenedor-formulario .formulario .form-style {
+        width: 90%; } }
+
+/* Ubicacion */
+.contenedor-ubicacion {
+  background: #e5b25d; }
+  @media screen and (max-width: 768px) {
+    .contenedor-ubicacion .container-fluid .row .col-2 .img-ubici {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .contenedor-ubicacion .container-fluid .col-8 .iframe-mapa {
+      width: 100%; } }
