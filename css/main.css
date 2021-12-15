@@ -4,9 +4,15 @@
   margin: 0;
   font-family: 'Dancing Script', cursive; }
 
+h1 .galeria {
+  color: #FF2E00; }
+
+h1 .paseo {
+  color: #5C946E; }
+
 body {
-  background-image: url(../imagenes/parednaranja.jpg);
-  background-position: bottom; }
+  background: #e48909;
+  background: linear-gradient(90deg, #e48909 0%, #edbe1e 50%, #e48909 100%); }
 
 .cabeza {
   width: 100%;
@@ -130,42 +136,87 @@ footer {
     font-size: 1em; } }
 
 /* Algo de Historia... */
-.contenedor-historia {
+.contenedor-pasillo {
+  background: #e5b25d;
+  background: linear-gradient(0deg, #e5b25d 14%, #d68c4e 91%);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .contenedor-pasillo .contenedor-imgpasillo {
+    grid-column: 1/5;
+    grid-row: 1/2; }
+    .contenedor-pasillo .contenedor-imgpasillo .pasillo .img-pasillo {
+      border-radius: 10px; }
+  .contenedor-pasillo .contenedor-parrafo {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-column: 6/12;
+    grid-row: 1/2; }
+    .contenedor-pasillo .contenedor-parrafo .parrafo {
+      font-size: 2em; }
+    .contenedor-pasillo .contenedor-parrafo .contenedor-boton {
+      font-size: 1.9em; }
+      .contenedor-pasillo .contenedor-parrafo .contenedor-boton .btn {
+        font-size: 1em; }
+
+.contenedor-cartel {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 55rem;
-  background-color: bisque;
-  background-image: url(../imagenes/parednaranja.jpg); }
-  .contenedor-historia .titulo-historia {
-    grid-column: 5/9;
-    grid-row: 1/2;
-    width: 100%;
-    font-size: 3rem;
-    color: #2B303A;
-    text-align: center;
-    padding: 20px 0; }
-  .contenedor-historia .imagen-pasillo {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8; }
-  .contenedor-historia .parrafo-historia {
-    grid-column: 4/10;
-    grid-row: 2/3;
-    font-size: 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center; }
-  .contenedor-historia .imagen-cartel {
-    grid-column: 10/13;
-    grid-row: 2/3;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8; }
+  background: #d68c4e;
+  background: linear-gradient(0deg, #d68c4e 14%, #e5b25d 91%); }
+  .contenedor-cartel .contenedor-parrafoii {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-column: 2/9;
+    grid-row: 1/2; }
+    .contenedor-cartel .contenedor-parrafoii .parrafoii {
+      font-size: 1.7em;
+      grid-row: 1/2; }
+    .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos {
+      grid-row: 2/3;
+      font-size: 1.9em; }
+      .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn {
+        font-size: 1em; }
+  .contenedor-cartel .contenedor-letrero {
+    grid-column: 9/13;
+    grid-row: 1/2; }
+    .contenedor-cartel .contenedor-letrero .letrero .img-cartel {
+      border-radius: 10px; }
+
+@media screen and (max-width: 768px) {
+  .contenedor-pasillo {
+    display: block; }
+  .contenedor-cartel {
+    display: block; }
+  .decoracion .img-decoracion {
+    height: 50vh; }
+  .decoracion .parrafo-decoracion .parrafo-deco {
+    font-size: 22px; } }
+
+@media screen and (max-width: 1024px) {
+  .contenedor-pasillo .contenedor-parrafo {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-column: 6/12;
+    grid-row: 1/2; }
+    .contenedor-pasillo .contenedor-parrafo .parrafo {
+      font-size: 1.5em; }
+    .contenedor-pasillo .contenedor-parrafo .contenedor-boton {
+      font-size: 1.5em; }
+      .contenedor-pasillo .contenedor-parrafo .contenedor-boton .btn {
+        font-size: .8em; }
+  .contenedor-cartel .contenedor-parrafoii {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-column: 2/9;
+    grid-row: 1/2; }
+    .contenedor-cartel .contenedor-parrafoii .parrafoii {
+      font-size: 1.5em;
+      grid-row: 1/2; }
+    .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos {
+      grid-row: 2/3;
+      font-size: 1.5em; }
+      .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn {
+        font-size: .8em; } }
 
 /* Decoracion */
 .decoracion {
@@ -173,9 +224,7 @@ footer {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 100%;
-  background-color: bisque;
-  background-image: url(../imagenes/parednaranja.jpg);
-  margin-top: 300px; }
+  margin-top: 50px; }
   .decoracion .img-decoracion {
     grid-column: 1/13;
     grid-row: 1/2;
@@ -190,42 +239,20 @@ footer {
     text-align: center;
     width: 100%; }
 
-@media screen and (max-width: 768px) {
-  /* Algo de Historia */
-  .contenedor-historia {
-    display: inline-block;
-    height: auto; }
-  .contenedor-historia .titulo-historia {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .contenedor-historia .imagen-cartel {
-    display: none; }
-  .contenedor-historia .imagen-pasillo {
-    width: 80%;
-    margin-left: 30px; }
-  .contenedor-historia .parrafo-historia {
-    font-size: 1.5em;
-    padding: 0 20px; }
-  /* DECORACION */
-  .decoracion .img-decoracion {
-    height: 50vh; } }
-
 /* Sobre nosotros */
 h1 {
   color: #2B303A; }
 
-.container {
+#nosotros {
   background: #e5b25d;
   background: linear-gradient(0deg, #e5b25d 13%, #d68c4e 77%); }
-  .container .row .col-12 .img-gral {
+  #nosotros .row .col-12 .img-gral {
     opacity: 0.9; }
-    .container .row .col-12 .img-gral:hover {
+    #nosotros .row .col-12 .img-gral:hover {
       transform: scale(1.1);
       transition: 1s; }
       @media screen and (max-width: 768px) {
-        .container .row .col-12 .img-gral:hover {
+        #nosotros .row .col-12 .img-gral:hover {
           transform: scale(0.9);
           transition: 1s; } }
 

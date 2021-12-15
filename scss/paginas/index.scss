@@ -1,44 +1,130 @@
 
 /* Algo de Historia... */
-.contenedor-historia{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 55rem;
-    background-color: bisque;
-    background-image: url(../imagenes/parednaranja.jpg);
-    .titulo-historia{
-        grid-column: 5/9;
+
+.contenedor-pasillo{
+    background: rgb(229,178,93);
+    background: linear-gradient(0deg, rgba(229,178,93,1) 14%, rgba(214,140,78,1) 91%);
+    display:  grid;
+    grid-template-columns: repeat(12,1fr);
+    .contenedor-imgpasillo{
+        grid-column: 1/5;
         grid-row: 1/2;
-        width: 100%;
-        font-size: 3rem;
-        color: $color-titulo;
-        text-align: center;
-        padding: 20px 0;
+        .pasillo{
+            .img-pasillo{
+                border-radius: 10px;
+            }
+        }
     }
-    .imagen-pasillo{
-        grid-column: 1/4;
-        grid-row: 2/3;
-        border-radius: 30px;
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
+    .contenedor-parrafo{
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-column: 6/12;
+        grid-row: 1/2;
+        .parrafo{
+            font-size: 2em;
+        }
+        .contenedor-boton{
+            font-size: 1.9em;
+            .btn{
+                font-size: 1em;
+            }
+        }
     }
-    .parrafo-historia{
-        grid-column: 4/10;
-        grid-row: 2/3;
-        font-size: 2rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
+    
+}
+
+.contenedor-cartel{
+    display:  grid;
+    grid-template-columns: repeat(12,1fr);
+    background: rgb(214,140,78);
+    background: linear-gradient(0deg, rgba(214,140,78,1) 14%, rgba(229,178,93,1) 91%);
+    .contenedor-parrafoii{
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-column: 2/9;
+        grid-row: 1/2;
+        
+        .parrafoii{
+            font-size: 1.7em;
+            grid-row: 1/2;
+        }
+        .contenedor-botonnos{
+            grid-row: 2/3;
+            font-size: 1.9em;
+            .btn{
+                font-size:1em ;
+            }
+        }
     }
-    .imagen-cartel{
-        grid-column: 10/13;
-        grid-row: 2/3;
-        border-radius: 30px;
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
+    .contenedor-letrero{
+        grid-column: 9/13;
+        grid-row: 1/2;
+        .letrero{
+            .img-cartel{
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .contenedor-pasillo{
+        display: block;
+    }
+    .contenedor-cartel{
+        display: block;
+    }
+    .decoracion{
+        .img-decoracion{
+            height: 50vh;
+        }
+        .parrafo-decoracion{
+            .parrafo-deco{
+                font-size: 22px;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width:1024px) {
+    .contenedor-pasillo{
+        .contenedor-parrafo{
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-column: 6/12;
+            grid-row: 1/2;
+            .parrafo{
+                font-size: 1.5em;
+            }
+            .contenedor-boton{
+                font-size: 1.5em;
+                .btn{
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+    .contenedor-cartel{
+        .contenedor-parrafoii{
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-column: 2/9;
+            grid-row: 1/2;
+            
+            .parrafoii{
+                font-size: 1.5em;
+                grid-row: 1/2;
+            }
+            .contenedor-botonnos{
+                grid-row: 2/3;
+                font-size: 1.5em;
+                .btn{
+                    font-size:.8em ;
+                }
+            }
+        }
     }
 }
 
@@ -49,9 +135,8 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 100%;
-    background-color: bisque;
-    background-image: url(../imagenes/parednaranja.jpg);
-    margin-top: 300px;
+    
+    margin-top: 50px;
     .img-decoracion{
         grid-column: 1/13;
         grid-row: 1/2;
@@ -67,35 +152,4 @@
         text-align: center;
         width: 100%;
     }
-}
-
-@media screen and (max-width:768px) {
-    /* Algo de Historia */
-    .contenedor-historia{
-        display: inline-block;
-        height: auto;
-    }
-    .contenedor-historia .titulo-historia{
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .contenedor-historia .imagen-cartel{
-        display: none;
-    }
-    .contenedor-historia .imagen-pasillo{
-        width: 80%;
-        margin-left: 30px;
-    }
-    .contenedor-historia .parrafo-historia{
-        font-size: 1.5em;
-        padding: 0 20px;
-    }
-
-    /* DECORACION */
-    .decoracion .img-decoracion{
-        height: 50vh;
-    }
-
 }
