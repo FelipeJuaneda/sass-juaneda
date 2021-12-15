@@ -83,13 +83,14 @@ footer{
     footer .volver-arriba{
         grid-column: 1/5;
         grid-row: 1/2;
+        display: none;
     }
     footer .footer-felipe{
         grid-column: 5/10;
         grid-row: 2/3;
     }
     footer .footer-redes{
-        grid-column: 6/12;
+        grid-column: 5/10;
         grid-row: 1/2;
         width: 100%;
         font-size: 1em;
