@@ -27,6 +27,10 @@
             font-size: 1.9em;
             .btn{
                 font-size: 1em;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .2s;
+                }
             }
         }
     }
@@ -53,6 +57,10 @@
             font-size: 1.9em;
             .btn{
                 font-size:1em ;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .2s;
+                }
             }
         }
     }

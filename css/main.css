@@ -160,6 +160,9 @@ footer {
       font-size: 1.9em; }
       .contenedor-pasillo .contenedor-parrafo .contenedor-boton .btn {
         font-size: 1em; }
+        .contenedor-pasillo .contenedor-parrafo .contenedor-boton .btn:hover {
+          transform: scale(1.1);
+          transition: .2s; }
 
 .contenedor-cartel {
   display: grid;
@@ -179,6 +182,9 @@ footer {
       font-size: 1.9em; }
       .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn {
         font-size: 1em; }
+        .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn:hover {
+          transform: scale(1.1);
+          transition: .2s; }
   .contenedor-cartel .contenedor-letrero {
     grid-column: 9/13;
     grid-row: 1/2; }
