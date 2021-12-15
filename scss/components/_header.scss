@@ -3,8 +3,9 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-image:url(../imagenes/paredverde.jpg);
-    background-size: cover;
+    /* background-image:url(../imagenes/paredverde.jpg);
+    background-size: cover; */
+    background-color: #2B303A;
     .navegador{
         grid-column-start: 1;
         grid-column-end: 13;
@@ -39,7 +40,7 @@
                 }
                 a{
                     text-decoration: none;
-                    color: #591F0A;
+                    color: tomato;
                 }
             }
         }

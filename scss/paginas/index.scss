@@ -12,6 +12,10 @@
         .pasillo{
             .img-pasillo{
                 border-radius: 10px;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .9s;
+                }
             }
         }
     }
@@ -70,6 +74,10 @@
         .letrero{
             .img-cartel{
                 border-radius: 10px;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .9s;
+                }
             }
         }
     }

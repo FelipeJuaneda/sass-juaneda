@@ -22,8 +22,9 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-image: url(../imagenes/paredverde.jpg);
-  background-size: cover; }
+  /* background-image:url(../imagenes/paredverde.jpg);
+    background-size: cover; */
+  background-color: #2B303A; }
   .cabeza .navegador {
     grid-column-start: 1;
     grid-column-end: 13;
@@ -55,7 +56,7 @@ body {
           width: 100%; }
         .cabeza .navegador ul li a {
           text-decoration: none;
-          color: #591F0A; }
+          color: tomato; }
 
 @media screen and (max-width: 768px) {
   .cabeza .navegador .img-logo {
@@ -149,6 +150,9 @@ footer {
     grid-row: 1/2; }
     .contenedor-pasillo .contenedor-imgpasillo .pasillo .img-pasillo {
       border-radius: 10px; }
+      .contenedor-pasillo .contenedor-imgpasillo .pasillo .img-pasillo:hover {
+        transform: scale(1.1);
+        transition: .9s; }
   .contenedor-pasillo .contenedor-parrafo {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -190,6 +194,9 @@ footer {
     grid-row: 1/2; }
     .contenedor-cartel .contenedor-letrero .letrero .img-cartel {
       border-radius: 10px; }
+      .contenedor-cartel .contenedor-letrero .letrero .img-cartel:hover {
+        transform: scale(1.1);
+        transition: .9s; }
 
 /* Decoracion */
 .decoracion {
@@ -320,7 +327,9 @@ footer {
 /* Formulario */
 .contenedor-formulario {
   background: #d68c4e;
-  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 92%); }
+  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 92%);
+  /* background-image: url(/imagenes/contacto.png); */
+  background-position: center; }
   .contenedor-formulario .formulario .form-style {
     width: 50%;
     margin: auto; }
