@@ -2,8 +2,8 @@
 /* Algo de Historia... */
 
 .contenedor-pasillo{
-    background: rgb(229,178,93);
-    background: linear-gradient(0deg, rgba(229,178,93,1) 14%, rgba(214,140,78,1) 91%);
+    background-image: url(/imagenes/fondoheader.gif);
+    background-position: center;
     display:  grid;
     grid-template-columns: repeat(12,1fr);
     .contenedor-imgpasillo{
@@ -26,9 +26,14 @@
         grid-row: 1/2;
         .parrafo{
             font-size: 1.7em;
+            color: whitesmoke;
+            .lh-base{
+                font-family:Arial, Helvetica, sans-serif;
+            }
         }
         .contenedor-boton{
             font-size: 1.9em;
+            color: yellow;
             .btn{
                 font-size: 1em;
                 &:hover{
@@ -44,8 +49,8 @@
 .contenedor-cartel{
     display:  grid;
     grid-template-columns: repeat(12,1fr);
-    background: rgb(214,140,78);
-    background: linear-gradient(0deg, rgba(214,140,78,1) 14%, rgba(229,178,93,1) 91%);
+    background-image: url(/imagenes/fondoheader.gif);
+    background-position: center;
     .contenedor-parrafoii{
         display: grid;
         grid-template-rows: repeat(2,auto);
@@ -55,10 +60,15 @@
         .parrafoii{
             font-size: 1.7em;
             grid-row: 1/2;
+            color: whitesmoke;
+            .lh-base{
+                font-family:Arial, Helvetica, sans-serif;
+            }
         }
         .contenedor-botonnos{
             grid-row: 2/3;
             font-size: 1.9em;
+            color: yellow;
             .btn{
                 font-size:1em ;
                 &:hover{

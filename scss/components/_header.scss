@@ -3,9 +3,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* background-image:url(../imagenes/paredverde.jpg);
-    background-size: cover; */
-    background-color: #2B303A;
+    background-image: url(/imagenes/fondoheader.gif);
     .navegador{
         grid-column-start: 1;
         grid-column-end: 13;
@@ -40,7 +38,7 @@
                 }
                 a{
                     text-decoration: none;
-                    color: tomato;
+                    color: yellow
                 }
             }
         }
@@ -55,5 +53,11 @@
     .cabeza .navegador ul li{
         font-size: 20px;
         display:block
+    }
+}
+
+@media screen and (max-width:375px) {
+    .cabeza .navegador ul li{
+        font-size: 1em;
     }
 }
