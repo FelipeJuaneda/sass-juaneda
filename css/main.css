@@ -325,15 +325,21 @@ footer {
   background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 71%);
   height: 100%; }
   .locales-carousel .local-i .container-fluid {
-    width: 40%; }
+    width: 40%;
+    background-image: url(../imagenes/fondoheader.jpg); }
     @media screen and (max-width: 576px) {
       .locales-carousel .local-i .container-fluid {
         width: 90%; } }
+    .locales-carousel .local-i .container-fluid .subtitulo-local1 {
+      color: whitesmoke; }
   .locales-carousel .local-ii .container-fluid {
-    width: 40%; }
+    width: 40%;
+    background-image: url(../imagenes/fondoheader.jpg); }
     @media screen and (max-width: 576px) {
       .locales-carousel .local-ii .container-fluid {
         width: 90%; } }
+    .locales-carousel .local-ii .container-fluid .subtitulo-local2 {
+      color: whitesmoke; }
 
 /* Servicios titulo e imgs */
 .container-fluid .row .col-12 .img-gral {
