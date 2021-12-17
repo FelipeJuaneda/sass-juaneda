@@ -3,7 +3,10 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-image: url(/imagenes/fondoheader.gif);
+    background-color: $color-colonial;
+    &:hover{
+        background-image: url(/imagenes/fondoheader.gif);
+    }
     .navegador{
         grid-column-start: 1;
         grid-column-end: 13;
@@ -12,8 +15,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .img-logo{
-            margin: 20px 20px;
+        .link-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-logo{
+                margin: 20px 20px;
+                width: 50%;
+            }
         }
         ul{
             margin: 15px 20px;
@@ -23,6 +32,7 @@
                 font-size: 1.4rem;
                 list-style: none;
                 position: relative;
+                
                 &::before{
                     content: "";
                     background: #FED766;
@@ -47,8 +57,11 @@
 }
 
 @media screen and (max-width:768px) {
-    .cabeza .navegador .img-logo{
-        width: 100%;
+    .cabeza .navegador{
+        justify-content: center;
+    }
+    .cabeza .navegador .link-logo .img-logo{
+        width: 75%;
     }
     .cabeza .navegador ul li{
         font-size: 20px;
@@ -57,6 +70,10 @@
 }
 
 @media screen and (max-width:375px) {
+    .cabeza .navegador .link-logo .img-logo{
+        margin-left: 60px;
+        width: 90%;
+    }
     .cabeza .navegador ul li{
         font-size: 1em;
     }
