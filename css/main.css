@@ -291,6 +291,12 @@ footer {
       .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn {
         font-size: .8em; } }
 
+@media screen and (max-width: 425px) {
+  .contenedor-pasillo .contenedor-parrafo .parrafo {
+    font-size: 1em; }
+  .contenedor-cartel .contenedor-parrafoii .parrafoii {
+    font-size: 1em; } }
+
 /* Sobre nosotros */
 #nosotros {
   background: #e5b25d;
