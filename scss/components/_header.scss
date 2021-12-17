@@ -5,7 +5,7 @@
     grid-template-columns: repeat(12, 1fr);
     background-color: $color-colonial;
     &:hover{
-        background-image: url(/imagenes/fondoheader.gif);
+        background-image: url(../imagenes/fondoheader.jpg);
     }
     .navegador{
         grid-column-start: 1;
@@ -32,7 +32,6 @@
                 font-size: 1.4rem;
                 list-style: none;
                 position: relative;
-                
                 &::before{
                     content: "";
                     background: #FED766;

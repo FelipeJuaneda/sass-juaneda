@@ -2,7 +2,7 @@
 /* Algo de Historia... */
 
 .contenedor-pasillo{
-    background-image: url(/imagenes/fondoheader.gif);
+    background-image: url(../imagenes/fondoheader.jpg);
     background-position: center;
     display:  grid;
     grid-template-columns: repeat(12,1fr);
@@ -49,7 +49,7 @@
 .contenedor-cartel{
     display:  grid;
     grid-template-columns: repeat(12,1fr);
-    background-image: url(/imagenes/fondoheader.gif);
+    background-image: url(../imagenes/fondoheader.jpg);
     background-position: center;
     .contenedor-parrafoii{
         display: grid;

@@ -27,7 +27,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   background-color: #2B303A; }
   .cabeza:hover {
-    background-image: url(/imagenes/fondoheader.gif); }
+    background-image: url(../imagenes/fondoheader.jpg); }
   .cabeza .navegador {
     grid-column-start: 1;
     grid-column-end: 13;
@@ -158,7 +158,7 @@ footer {
 
 /* Algo de Historia... */
 .contenedor-pasillo {
-  background-image: url(/imagenes/fondoheader.gif);
+  background-image: url(../imagenes/fondoheader.jpg);
   background-position: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
@@ -192,7 +192,7 @@ footer {
 .contenedor-cartel {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-image: url(/imagenes/fondoheader.gif);
+  background-image: url(../imagenes/fondoheader.jpg);
   background-position: center; }
   .contenedor-cartel .contenedor-parrafoii {
     display: grid;
