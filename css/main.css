@@ -16,9 +16,7 @@ h1 .colonial {
 
 body {
   background: #e48909;
-  background: linear-gradient(90deg, #e48909 0%, #edbe1e 50%, #e48909 100%);
-  /* background: rgb(140,59,11);
-    background: linear-gradient(90deg, rgba(140,59,11,1) 27%, rgba(150,101,36,1) 51%, rgba(140,59,11,1) 72%); */ }
+  background: linear-gradient(90deg, #e48909 0%, #edbe1e 50%, #e48909 100%); }
 
 .cabeza {
   width: 100%;
@@ -364,9 +362,7 @@ footer {
 
 /* Formulario */
 .contenedor-formulario {
-  background: #d68c4e;
-  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 92%);
-  /* background-image: url(/imagenes/contacto.png); */
+  background-image: url(../imagenes/fondoheader2.gif);
   background-position: center; }
   .contenedor-formulario .formulario .form-style {
     width: 50%;
@@ -377,10 +373,16 @@ footer {
 
 /* Ubicacion */
 .contenedor-ubicacion {
-  background: #e5b25d; }
-  @media screen and (max-width: 768px) {
-    .contenedor-ubicacion .container-fluid .row .col-2 .img-ubici {
-      display: none; } }
-  @media screen and (max-width: 768px) {
+  background-color: #2B303A; }
+  .contenedor-ubicacion #subtitulo-ubic {
+    color: yellow; }
+  .contenedor-ubicacion .container-fluid {
+    background-image: url(../imagenes/fondoheader.jpg); }
+    @media screen and (max-width: 768px) {
+      .contenedor-ubicacion .container-fluid .row .col-2 .img-ubici {
+        display: none; } }
     .contenedor-ubicacion .container-fluid .col-8 .iframe-mapa {
-      width: 100%; } }
+      margin-top: 10px; }
+      @media screen and (max-width: 768px) {
+        .contenedor-ubicacion .container-fluid .col-8 .iframe-mapa {
+          width: 100%; } }
