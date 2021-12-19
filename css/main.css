@@ -12,7 +12,7 @@ h1 .paseo {
   color: #5C946E; }
 
 h1 .colonial {
-  color: #2B303A; }
+  color: #2b303a; }
 
 body {
   background: #e48909;
@@ -23,7 +23,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: #2B303A; }
+  background-color: #2b303a; }
   .cabeza:hover {
     background-image: url(../imagenes/fondoheader.jpg); }
   .cabeza .navegador {
@@ -84,7 +84,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background-color: #2B303A; }
+  /* background-color: #2B303A; */
+  background-color: #36393B; }
   footer .volver-arriba {
     grid-column: 1/3;
     grid-row: 1/2;
@@ -224,39 +225,40 @@ footer {
         transform: scale(1.1);
         transition: .9s; }
 
+/* wave */
 /* Decoracion */
-.decoracion {
-  display: flex;
-  justify-content: space-around; }
-  .decoracion .img-decoracion {
-    width: 100%; }
-    .decoracion .img-decoracion:hover {
-      transform: scale(0.95);
-      transition: .4s;
-      opacity: .9; }
-  @media screen and (max-width: 1311px) {
-    .decoracion .contenedor-decoracioniiiii {
-      display: none; } }
-  @media screen and (max-width: 1059px) {
-    .decoracion .contenedor-decoracioniiii {
-      display: none; } }
-  @media screen and (max-width: 808px) {
-    .decoracion .contenedor-decoracioniii {
-      display: none; } }
-  @media screen and (max-width: 770px) {
-    .decoracion .contenedor-decoracioni {
-      display: none; }
-    .decoracion .contenedor-decoracionii {
-      display: none; } }
-
-.parrafo-decora {
-  display: flex;
-  justify-content: center; }
-  .parrafo-decora .parrafo-deco {
-    width: 500px;
-    color: #000; }
-    .parrafo-decora .parrafo-deco span {
-      color: #36da36; }
+.decoracion-cont {
+  background-color: #2b303a; }
+  .decoracion-cont .decoracion {
+    display: flex;
+    justify-content: space-around; }
+    .decoracion-cont .decoracion .img-decoracion {
+      width: 100%; }
+      .decoracion-cont .decoracion .img-decoracion:hover {
+        transform: scale(0.95);
+        transition: .4s;
+        opacity: .9; }
+    @media screen and (max-width: 1311px) {
+      .decoracion-cont .decoracion .contenedor-decoracioniiiii {
+        display: none; } }
+    @media screen and (max-width: 1059px) {
+      .decoracion-cont .decoracion .contenedor-decoracioniiii {
+        display: none; } }
+    @media screen and (max-width: 808px) {
+      .decoracion-cont .decoracion .contenedor-decoracioniii {
+        display: none; } }
+    @media screen and (max-width: 550px) {
+      .decoracion-cont .decoracion .contenedor-decoracionii {
+        display: none; } }
+  .decoracion-cont .parrafo-decora {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    .decoracion-cont .parrafo-decora .parrafo-deco {
+      width: 500px;
+      color: yellow; }
+      .decoracion-cont .parrafo-decora .parrafo-deco span {
+        color: #36da36; }
 
 /* Media de contenedor pasillo y cartel */
 @media screen and (max-width: 768px) {
@@ -385,7 +387,7 @@ footer {
 
 /* Ubicacion */
 .contenedor-ubicacion {
-  background-color: #2B303A; }
+  background-color: #2b303a; }
   .contenedor-ubicacion #subtitulo-ubic {
     color: yellow; }
   .contenedor-ubicacion .container-fluid {

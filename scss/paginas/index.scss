@@ -95,57 +95,61 @@
     }
 }
 
+/* wave */
+
+
+
 /* Decoracion */
 
-.decoracion{
-    display: flex;
-    justify-content: space-around;
-    .img-decoracion{
-        width: 100%;
-        &:hover{
-            transform: scale(.95);
-            transition: .4s;
-            opacity: .9;
+.decoracion-cont{
+    background-color: $color-colonial;
+    .decoracion{
+        display: flex;
+        justify-content: space-around;
+        .img-decoracion{
+            width: 100%;
+            &:hover{
+                transform: scale(.95);
+                transition: .4s;
+                opacity: .9;
+            }
+        }
+        @media screen and (max-width: 1311px) {
+            .contenedor-decoracioniiiii{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 1059px) {
+            .contenedor-decoracioniiii{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 808px) {
+            .contenedor-decoracioniii{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 550px) {
+            .contenedor-decoracionii{
+                display: none;
+            }
         }
     }
-    @media screen and (max-width: 1311px) {
-        .contenedor-decoracioniiiii{
-            display: none;
-        }
-    }
-    @media screen and (max-width: 1059px) {
-        .contenedor-decoracioniiii{
-            display: none;
-        }
 
-    }
-    @media screen and (max-width: 808px) {
-        .contenedor-decoracioniii{
-            display: none;
+    .parrafo-decora{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .parrafo-deco{
+            width: 500px;
+            color: $color-amarillo;
+            span{
+                color: rgb(54, 218, 54);
+            }
         }
-    }
-    @media screen and (max-width: 770px) {
-        .contenedor-decoracioni{
-            display: none;
-        }
-        .contenedor-decoracionii{
-            display: none;
-        }
-
     }
 }
 
-.parrafo-decora{
-    display: flex;
-    justify-content: center;
-    .parrafo-deco{
-        width: 500px;
-        color: #000;
-        span{
-            color: rgb(54, 218, 54);
-        }
-    }
-}
 
 /* Media de contenedor pasillo y cartel */
 
