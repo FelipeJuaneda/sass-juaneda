@@ -7,6 +7,9 @@
     &:hover{
         background-image: url(../imagenes/fondoheader.jpg);
     }
+    -webkit-box-shadow: -1px 15px 40px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 15px 40px -10px rgba(0,0,0,0.75);
+    box-shadow: -1px 15px 40px -10px rgba(0,0,0,0.75);
     .navegador{
         grid-column-start: 1;
         grid-column-end: 13;
