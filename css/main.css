@@ -377,29 +377,43 @@ footer {
           .contenedor-carta .carta-letrero .card .card-img-overlay {
             font-size: 1em; } }
 
-/* Formulario */
+/*Titulo y Formulario */
 .contenedor-formulario {
   background-image: url(../imagenes/fondoheader2.gif);
-  background-position: center; }
+  background-position: center;
+  -webkit-box-shadow: 7px 7px 29px 1px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 7px 7px 29px 1px rgba(0, 0, 0, 0.59);
+  box-shadow: 7px 7px 29px 1px rgba(0, 0, 0, 0.59); }
+  .contenedor-formulario #titulo-contacto {
+    font-size: 5em; }
   .contenedor-formulario .formulario .form-style {
-    width: 50%;
+    width: 60%;
     margin: auto; }
+    .contenedor-formulario .formulario .form-style input, .contenedor-formulario .formulario .form-style textarea {
+      font-size: 1.3em; }
+    @media screen and (max-width: 992px) {
+      .contenedor-formulario .formulario .form-style {
+        width: 75%; } }
     @media screen and (max-width: 768px) {
       .contenedor-formulario .formulario .form-style {
         width: 90%; } }
 
 /* Ubicacion */
 .contenedor-ubicacion {
-  background-color: #2b303a; }
+  background-color: #2b303a;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
   .contenedor-ubicacion #subtitulo-ubic {
-    color: yellow; }
+    color: yellow;
+    padding: 20px; }
   .contenedor-ubicacion .container-fluid {
     background-image: url(../imagenes/fondoheader.jpg); }
-    @media screen and (max-width: 768px) {
-      .contenedor-ubicacion .container-fluid .row .col-2 .img-ubici {
-        display: none; } }
-    .contenedor-ubicacion .container-fluid .col-8 .iframe-mapa {
-      margin-top: 10px; }
+    .contenedor-ubicacion .container-fluid .row .col-8 {
+      margin-top: 8px; }
+      .contenedor-ubicacion .container-fluid .row .col-8 .iframe-mapa iframe {
+        width: 100%; }
       @media screen and (max-width: 768px) {
-        .contenedor-ubicacion .container-fluid .col-8 .iframe-mapa {
+        .contenedor-ubicacion .container-fluid .row .col-8 .iframe-mapa {
           width: 100%; } }

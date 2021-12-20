@@ -1,11 +1,24 @@
-/* Formulario */
+
+/*Titulo y Formulario */
 .contenedor-formulario{
     background-image: url(../imagenes/fondoheader2.gif);
     background-position: center;
+    -webkit-box-shadow: 7px 7px 29px 1px rgba(0,0,0,0.59);
+    -moz-box-shadow: 7px 7px 29px 1px rgba(0,0,0,0.59);
+    box-shadow: 7px 7px 29px 1px rgba(0,0,0,0.59);
+    #titulo-contacto{
+        font-size: 5em;
+    }
     .formulario{
         .form-style{
-            width: 50%;
+            width: 60%;
             margin: auto;
+            input, textarea{
+                font-size: 1.3em;
+            }
+            @media screen and (max-width:992px) {
+                width: 75%;
+            }
             @media screen and (max-width:768px) {
                 width: 90%;
             }
@@ -17,25 +30,26 @@
 
 .contenedor-ubicacion{
     background-color: $color-colonial;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     #subtitulo-ubic{
         color: yellow;
+        padding: 20px;
     }
     .container-fluid{
         background-image: url(../imagenes/fondoheader.jpg);
         .row{
-            .col-2{
-                .img-ubici{
-                    @media screen and (max-width:768px) {
-                        display: none;
+            .col-8{
+                margin-top: 8px;
+                .iframe-mapa{
+                    iframe{
+                        width: 100%;
                     }
-                }
-            }
-        }
-        .col-8{
-            .iframe-mapa{
-                margin-top: 10px;
-                @media screen and (max-width:768px) {
-                    width: 100%;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
                 }
             }
         }
