@@ -326,8 +326,6 @@ footer {
       width: 100%; } }
 
 .locales-carousel {
-  background: #d68c4e;
-  background: linear-gradient(0deg, #d68c4e 13%, #e5b25d 71%);
   height: 100%; }
   .locales-carousel .local-i .container-fluid {
     width: 40%;
@@ -347,16 +345,18 @@ footer {
       color: whitesmoke; }
 
 /* Servicios titulo e imgs */
-.container-fluid .row .col-12 .img-gral {
-  width: 80%;
-  opacity: .8; }
-  .container-fluid .row .col-12 .img-gral:hover {
-    transform: scale(1.1);
-    transition: 1s; }
-    @media screen and (max-width: 768px) {
-      .container-fluid .row .col-12 .img-gral:hover {
-        transform: scale(0.9);
-        transition: 1s; } }
+.container-fluid {
+  background: none; }
+  .container-fluid .row .col-12 .img-gral {
+    width: 80%;
+    opacity: .8; }
+    .container-fluid .row .col-12 .img-gral:hover {
+      transform: scale(1.1);
+      transition: 1s; }
+      @media screen and (max-width: 768px) {
+        .container-fluid .row .col-12 .img-gral:hover {
+          transform: scale(0.9);
+          transition: 1s; } }
 
 /* Imagen con texto */
 .contenedor-carta {
