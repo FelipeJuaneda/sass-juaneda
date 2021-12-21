@@ -1,5 +1,15 @@
 /* Algo de Historia... */
-
+h1{
+    .galeria{
+        color: $color-galeria;
+    }
+    .paseo{
+        color: $color-paseo;
+    }
+    .colonial{
+        color: $color-colonial;
+    }
+}
 .contenedor-pasillo{
     background-image: url(../imagenes/fondoheader.jpg);
     background-position: center;

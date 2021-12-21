@@ -159,6 +159,15 @@ footer {
     font-size: 1em; } }
 
 /* Algo de Historia... */
+h1 .galeria {
+  color: #FF2E00; }
+
+h1 .paseo {
+  color: #5C946E; }
+
+h1 .colonial {
+  color: #2b303a; }
+
 .contenedor-pasillo {
   background-image: url(../imagenes/fondoheader.jpg);
   background-position: center;
