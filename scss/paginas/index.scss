@@ -118,13 +118,264 @@ h1{
     .decoracion{
         display: flex;
         justify-content: space-around;
-        .img-decoracion{
-            width: 100%;
-            &:hover{
-                transform: scale(.95);
-                transition: .4s;
-                opacity: .9;
+        .contenedor-decoracioni{
+            color: $color-amarillo;
+            width: 250px;
+            height: 400px;
+            position: relative;
+            background-image: url(../imagenes/galerialluvia.jpg);
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 5px;
+                left: 10px;
+                width: 0;
+                height: 2px;
+                background-color: $color-amarillo;
+                transition: all .6s;
             }
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 5px;
+                right: 10px;
+                width: 0;
+                height: 2px;
+                background-color: $color-amarillo;
+                transition: all .6s;
+            }
+            &:hover{
+                h3{
+                    transform: translateX(0%);
+                    transition: all .6s;
+                }
+                &::before, &::after{
+                    width: $hover-anchura;
+                }
+                transform: scale(.98);
+                transition: all .6s;
+            }
+            h3{
+                font-size: 2em;
+                position: absolute;
+                bottom:50px;
+                left: 156px;
+                transform: translateX(-280%);
+            }
+        }
+        .contenedor-decoracionii{
+            color: green;
+            width: 250px;
+            height: 400px;
+            position: relative;
+            background-image: url(../imagenes/cactus.jpg);
+            background-position: center;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 5px;
+                left: 10px;
+                width: 0;
+                height: 2px;
+                background-color: green;
+                transition: all .6s;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 5px;
+                right: 10px;
+                width: 0;
+                height: 2px;
+                background-color: green;
+                transition: all .6s;
+            }
+            &:hover{
+                h3, p{
+                    transform: translateX(0%);
+                    transition: all .6s;
+                }
+                &::before, &::after{
+                    width: $hover-anchura;
+                }
+                transform: scale(.98);
+                transition: all .6s;
+            }
+            h3{
+                font-size: 2.3em;
+                position: absolute;
+                top: 13px;
+                left: 70px;
+                transform: translateX(-210%);
+            }
+            p{
+                font-size: 1.4em;
+                position: absolute;
+                bottom:50px;
+                left: 100px;
+                transform: translateX(210%);
+            }
+        }
+    }
+    .contenedor-decoracioniii{
+        color: $color-amarillo;
+        width: 250px;
+        height: 400px;
+        position: relative;
+        background-image: url(https://dummyimage.com/250x400/000/fff);
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 10px;
+            width: 0;
+            height: 2px;
+            background-color: $color-amarillo;
+            transition: all .6s;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 5px;
+            right: 10px;
+            width: 0;
+            height: 2px;
+            background-color: $color-amarillo;
+            transition: all .6s;
+        }
+        &:hover{
+            h3, p{
+                transform: translateX(0%);
+                transition: all .6s;
+            }
+            &::before, &::after{
+                width: $hover-anchura;
+            }
+            transform: scale(.98);
+            transition: all .6s;
+        }
+        h3{
+            font-size: 2em;
+            position: absolute;
+            top: 40px;
+            left: 70px;
+            transform: translateX(-210%);
+        }
+        p{
+            font-size: 1.4em;
+            position: absolute;
+            bottom:50px;
+            left: 100px;
+            transform: translateX(210%);
+        }
+    }
+    .contenedor-decoracioniiii{
+        color: $color-amarillo;
+        width: 250px;
+        height: 400px;
+        position: relative;
+        background-image: url(https://dummyimage.com/250x400/000/fff);
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 10px;
+            width: 0;
+            height: 2px;
+            background-color: $color-amarillo;
+            transition: all .6s;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 5px;
+            right: 10px;
+            width: 0;
+            height: 2px;
+            background-color: $color-amarillo;
+            transition: all .6s;
+        }
+        &:hover{
+            h3, p{
+                transform: translateX(0%);
+                transition: all .6s;
+            }
+            &::before, &::after{
+                width: $hover-anchura;
+            }
+            transform: scale(.98);
+            transition: all .6s;
+        }
+        h3{
+            font-size: 2em;
+            position: absolute;
+            top: 40px;
+            left: 70px;
+            transform: translateX(-210%);
+        }
+        p{
+            font-size: 1.4em;
+            position: absolute;
+            bottom:50px;
+            left: 100px;
+            transform: translateX(210%);
+        }
+    }
+    .contenedor-decoracioniiiii{
+        color: $color-amarillo;
+        width: 250px;
+        height: 400px;
+        position: relative;
+        background-image: url(https://dummyimage.com/250x400/000/fff);
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 10px;
+            width: 0;
+            height: 2px;
+            background-color: $color-amarillo;
+            transition: all .6s;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 5px;
+            right: 10px;
+            width: 0;
+            height: 2px;
+            background-color: $color-amarillo;
+            transition: all .6s;
+        }
+        &:hover{
+            h3, p{
+                transform: translateX(0%);
+                transition: all .6s;
+            }
+            &::before, &::after{
+                width: $hover-anchura;
+            }
+            transform: scale(.98);
+            transition: all .6s;
+        }
+        h3{
+            font-size: 2em;
+            position: absolute;
+            top: 40px;
+            left: 70px;
+            transform: translateX(-210%);
+        }
+        p{
+            font-size: 1.4em;
+            position: absolute;
+            bottom:50px;
+            left: 100px;
+            transform: translateX(210%);
         }
     }
     .parrafo-decora{

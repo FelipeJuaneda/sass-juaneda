@@ -236,12 +236,226 @@ h1 .colonial {
   .decoracion-cont .decoracion {
     display: flex;
     justify-content: space-around; }
-    .decoracion-cont .decoracion .img-decoracion {
-      width: 100%; }
-      .decoracion-cont .decoracion .img-decoracion:hover {
-        transform: scale(0.95);
-        transition: .4s;
-        opacity: .9; }
+    .decoracion-cont .decoracion .contenedor-decoracioni {
+      color: yellow;
+      width: 250px;
+      height: 400px;
+      position: relative;
+      background-image: url(../imagenes/galerialluvia.jpg);
+      overflow: hidden; }
+      .decoracion-cont .decoracion .contenedor-decoracioni::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 10px;
+        width: 0;
+        height: 2px;
+        background-color: yellow;
+        transition: all .6s; }
+      .decoracion-cont .decoracion .contenedor-decoracioni::after {
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        right: 10px;
+        width: 0;
+        height: 2px;
+        background-color: yellow;
+        transition: all .6s; }
+      .decoracion-cont .decoracion .contenedor-decoracioni:hover {
+        transform: scale(0.98);
+        transition: all .6s; }
+        .decoracion-cont .decoracion .contenedor-decoracioni:hover h3 {
+          transform: translateX(0%);
+          transition: all .6s; }
+        .decoracion-cont .decoracion .contenedor-decoracioni:hover::before, .decoracion-cont .decoracion .contenedor-decoracioni:hover::after {
+          width: 80%; }
+      .decoracion-cont .decoracion .contenedor-decoracioni h3 {
+        font-size: 2em;
+        position: absolute;
+        bottom: 50px;
+        left: 156px;
+        transform: translateX(-280%); }
+    .decoracion-cont .decoracion .contenedor-decoracionii {
+      color: green;
+      width: 250px;
+      height: 400px;
+      position: relative;
+      background-image: url(../imagenes/cactus.jpg);
+      background-position: center;
+      overflow: hidden; }
+      .decoracion-cont .decoracion .contenedor-decoracionii::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 10px;
+        width: 0;
+        height: 2px;
+        background-color: green;
+        transition: all .6s; }
+      .decoracion-cont .decoracion .contenedor-decoracionii::after {
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        right: 10px;
+        width: 0;
+        height: 2px;
+        background-color: green;
+        transition: all .6s; }
+      .decoracion-cont .decoracion .contenedor-decoracionii:hover {
+        transform: scale(0.98);
+        transition: all .6s; }
+        .decoracion-cont .decoracion .contenedor-decoracionii:hover h3, .decoracion-cont .decoracion .contenedor-decoracionii:hover p {
+          transform: translateX(0%);
+          transition: all .6s; }
+        .decoracion-cont .decoracion .contenedor-decoracionii:hover::before, .decoracion-cont .decoracion .contenedor-decoracionii:hover::after {
+          width: 80%; }
+      .decoracion-cont .decoracion .contenedor-decoracionii h3 {
+        font-size: 2.3em;
+        position: absolute;
+        top: 13px;
+        left: 70px;
+        transform: translateX(-210%); }
+      .decoracion-cont .decoracion .contenedor-decoracionii p {
+        font-size: 1.4em;
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+        transform: translateX(210%); }
+  .decoracion-cont .contenedor-decoracioniii {
+    color: yellow;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: url(https://dummyimage.com/250x400/000/fff);
+    overflow: hidden; }
+    .decoracion-cont .contenedor-decoracioniii::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 10px;
+      width: 0;
+      height: 2px;
+      background-color: yellow;
+      transition: all .6s; }
+    .decoracion-cont .contenedor-decoracioniii::after {
+      position: absolute;
+      content: "";
+      bottom: 5px;
+      right: 10px;
+      width: 0;
+      height: 2px;
+      background-color: yellow;
+      transition: all .6s; }
+    .decoracion-cont .contenedor-decoracioniii:hover {
+      transform: scale(0.98);
+      transition: all .6s; }
+      .decoracion-cont .contenedor-decoracioniii:hover h3, .decoracion-cont .contenedor-decoracioniii:hover p {
+        transform: translateX(0%);
+        transition: all .6s; }
+      .decoracion-cont .contenedor-decoracioniii:hover::before, .decoracion-cont .contenedor-decoracioniii:hover::after {
+        width: 80%; }
+    .decoracion-cont .contenedor-decoracioniii h3 {
+      font-size: 2em;
+      position: absolute;
+      top: 40px;
+      left: 70px;
+      transform: translateX(-210%); }
+    .decoracion-cont .contenedor-decoracioniii p {
+      font-size: 1.4em;
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+      transform: translateX(210%); }
+  .decoracion-cont .contenedor-decoracioniiii {
+    color: yellow;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: url(https://dummyimage.com/250x400/000/fff);
+    overflow: hidden; }
+    .decoracion-cont .contenedor-decoracioniiii::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 10px;
+      width: 0;
+      height: 2px;
+      background-color: yellow;
+      transition: all .6s; }
+    .decoracion-cont .contenedor-decoracioniiii::after {
+      position: absolute;
+      content: "";
+      bottom: 5px;
+      right: 10px;
+      width: 0;
+      height: 2px;
+      background-color: yellow;
+      transition: all .6s; }
+    .decoracion-cont .contenedor-decoracioniiii:hover {
+      transform: scale(0.98);
+      transition: all .6s; }
+      .decoracion-cont .contenedor-decoracioniiii:hover h3, .decoracion-cont .contenedor-decoracioniiii:hover p {
+        transform: translateX(0%);
+        transition: all .6s; }
+      .decoracion-cont .contenedor-decoracioniiii:hover::before, .decoracion-cont .contenedor-decoracioniiii:hover::after {
+        width: 80%; }
+    .decoracion-cont .contenedor-decoracioniiii h3 {
+      font-size: 2em;
+      position: absolute;
+      top: 40px;
+      left: 70px;
+      transform: translateX(-210%); }
+    .decoracion-cont .contenedor-decoracioniiii p {
+      font-size: 1.4em;
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+      transform: translateX(210%); }
+  .decoracion-cont .contenedor-decoracioniiiii {
+    color: yellow;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: url(https://dummyimage.com/250x400/000/fff);
+    overflow: hidden; }
+    .decoracion-cont .contenedor-decoracioniiiii::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 10px;
+      width: 0;
+      height: 2px;
+      background-color: yellow;
+      transition: all .6s; }
+    .decoracion-cont .contenedor-decoracioniiiii::after {
+      position: absolute;
+      content: "";
+      bottom: 5px;
+      right: 10px;
+      width: 0;
+      height: 2px;
+      background-color: yellow;
+      transition: all .6s; }
+    .decoracion-cont .contenedor-decoracioniiiii:hover {
+      transform: scale(0.98);
+      transition: all .6s; }
+      .decoracion-cont .contenedor-decoracioniiiii:hover h3, .decoracion-cont .contenedor-decoracioniiiii:hover p {
+        transform: translateX(0%);
+        transition: all .6s; }
+      .decoracion-cont .contenedor-decoracioniiiii:hover::before, .decoracion-cont .contenedor-decoracioniiiii:hover::after {
+        width: 80%; }
+    .decoracion-cont .contenedor-decoracioniiiii h3 {
+      font-size: 2em;
+      position: absolute;
+      top: 40px;
+      left: 70px;
+      transform: translateX(-210%); }
+    .decoracion-cont .contenedor-decoracioniiiii p {
+      font-size: 1.4em;
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+      transform: translateX(210%); }
   .decoracion-cont .parrafo-decora {
     display: flex;
     justify-content: center;
