@@ -140,10 +140,10 @@ footer {
     grid-row: 1/2;
     display: none; }
   footer .footer-felipe {
-    grid-column: 5/10;
+    grid-column: 4/10;
     grid-row: 2/3; }
   footer .footer-redes {
-    grid-column: 5/10;
+    grid-column: 4/10;
     grid-row: 1/2;
     width: 100%;
     font-size: 1em; } }
@@ -160,7 +160,7 @@ h1 .colonial {
 
 .contenedor-pasillo {
   background-image: url(../imagenes/fondoheader.jpg);
-  background-position: center;
+  background-position: bottom;
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
   .contenedor-pasillo .contenedor-imgpasillo {
@@ -231,7 +231,8 @@ h1 .colonial {
 /* Decoracion */
 .decoracion-cont {
   background-color: #2b303a;
-  padding-top: 10px; }
+  padding-top: 130px;
+  height: 150vh; }
   .decoracion-cont .decoracion {
     display: flex;
     justify-content: space-around; }
@@ -241,18 +242,6 @@ h1 .colonial {
         transform: scale(0.95);
         transition: .4s;
         opacity: .9; }
-    @media screen and (max-width: 1311px) {
-      .decoracion-cont .decoracion .contenedor-decoracioniiiii {
-        display: none; } }
-    @media screen and (max-width: 1059px) {
-      .decoracion-cont .decoracion .contenedor-decoracioniiii {
-        display: none; } }
-    @media screen and (max-width: 808px) {
-      .decoracion-cont .decoracion .contenedor-decoracioniii {
-        display: none; } }
-    @media screen and (max-width: 550px) {
-      .decoracion-cont .decoracion .contenedor-decoracionii {
-        display: none; } }
   .decoracion-cont .parrafo-decora {
     display: flex;
     justify-content: center;
@@ -262,6 +251,18 @@ h1 .colonial {
       color: yellow; }
       .decoracion-cont .parrafo-decora .parrafo-deco span {
         color: #36da36; }
+  @media screen and (max-width: 1311px) {
+    .decoracion-cont .contenedor-decoracioniiiii {
+      display: none; } }
+  @media screen and (max-width: 1059px) {
+    .decoracion-cont .contenedor-decoracioniiii {
+      display: none; } }
+  @media screen and (max-width: 808px) {
+    .decoracion-cont .contenedor-decoracioniii {
+      display: none; } }
+  @media screen and (max-width: 550px) {
+    .decoracion-cont .contenedor-decoracionii {
+      display: none; } }
 
 /* Media de contenedor pasillo y cartel */
 @media screen and (max-width: 768px) {

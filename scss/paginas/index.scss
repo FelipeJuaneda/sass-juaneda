@@ -12,7 +12,7 @@ h1{
 }
 .contenedor-pasillo{
     background-image: url(../imagenes/fondoheader.jpg);
-    background-position: center;
+    background-position: bottom;
     display:  grid;
     grid-template-columns: repeat(12,1fr);
     .contenedor-imgpasillo{
@@ -113,7 +113,8 @@ h1{
 
 .decoracion-cont{
     background-color: $color-colonial;
-    padding-top: 10px;
+    padding-top: 130px;
+    height: 150vh;
     .decoracion{
         display: flex;
         justify-content: space-around;
@@ -125,28 +126,7 @@ h1{
                 opacity: .9;
             }
         }
-        @media screen and (max-width: 1311px) {
-            .contenedor-decoracioniiiii{
-                display: none;
-            }
-        }
-        @media screen and (max-width: 1059px) {
-            .contenedor-decoracioniiii{
-                display: none;
-            }
-        }
-        @media screen and (max-width: 808px) {
-            .contenedor-decoracioniii{
-                display: none;
-            }
-        }
-        @media screen and (max-width: 550px) {
-            .contenedor-decoracionii{
-                display: none;
-            }
-        }
     }
-
     .parrafo-decora{
         display: flex;
         justify-content: center;
@@ -157,6 +137,26 @@ h1{
             span{
                 color: rgb(54, 218, 54);
             }
+        }
+    }
+    @media screen and (max-width: 1311px) {
+        .contenedor-decoracioniiiii{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1059px) {
+        .contenedor-decoracioniiii{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 808px) {
+        .contenedor-decoracioniii{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .contenedor-decoracionii{
+            display: none;
         }
     }
 }
