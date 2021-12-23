@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="../css/main.css">
 
     <link rel="shortcut icon" href="../imagenes/colores1.ico">
-    <title>Contacto</title>
+    <title>Contacto - Contactanos y comentanos tus dudas de cualquier tipo!</title>
 </head>
 
 <body>
     <header class="cabeza">
         <nav class="navegador">
-            <a class="link-logo" href="../index.html">
+            <a class="link-logo" data-aos="fade-right" data-aos-duration="1500" href="../index.html">
                 <img src="../imagenes/logocartelmod.jpg" alt="logo" class="img-logo">
             </a>
 
-            <ul>
+            <ul data-aos="fade-down" data-aos-duration="1300">
                 <li>
                     <a href="../index.html">Inicio</a>
                 </li>
@@ -48,18 +48,19 @@
 
     <!-- Titulo y formulario -->
 
-    <main class="contenedor-formulario container my-5">
+    <main class="contenedor-formulario container my-5" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
         <h1 id="titulo-contacto" class="text-center p-4">Contacto</h1>
         <section class="formulario">
             <form class="form-style">
                 <!-- 2 columas para nombre y apellido -->
                 <div class="row mb-5">
-                    <div class="col">
+                    <div id="col1" class="col">
                         <div class="form-outline">
                             <input placeholder="Nombre" type="text" id="form6Example1" class="form-control" />
                         </div>
                     </div>
-                    <div class="col">
+                    <div id="col2" class="col">
                         <div class="form-outline">
                             <input placeholder="Apellido" type="text" id="form6Example2" class="form-control" />
                         </div>
@@ -105,7 +106,7 @@
         <div class="container-fluid">
             <div class="row d-flex justify-content-center">
                 <div class="col-8">
-                    <div class="iframe-mapa"><iframe
+                    <div class="iframe-mapa" data-aos="flip-up" data-aos-duration="1500"><iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.64694106271!2d-64.19406968530612!3d-31.423852103756463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28633a360b5%3A0x941372e4f44cc230!2sBelgrano%20773%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1638828775348!5m2!1ses!2sar"
                             height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
@@ -126,12 +127,12 @@
         </div>
 
         <div class="footer-redes">
-            <h3 class="seguinos">Seguinos en nuestras redes</h3>
+            <img class="logo-footer" src="../imagenes/logo-galeria-nuevo.png" alt="">
             <div class="footer-imgs">
                 <a href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">
                     <img class="red-insta" src="../imagenes/instagram.png" alt="instagram">
                 </a>
-                <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=2664319381&text=Hola%20que%20tal!!%20Encontre%20estos%20locales%20por%20internet,%20quisiera%20saber%20precios%20y%20disponibilidad!%20Gracias!" target="_blank">
                     <img class="red-whats" src="../imagenes/whatsapp.png" alt="whatsapp">
                 </a>
                 <a href="https://www.facebook.com/felipe.juaneda/" target="_blank">

@@ -51,13 +51,28 @@ h1{
         .contenedor-boton{
             font-size: 1.9em;
             color: yellow;
-            padding: 15px;
-            .btn{
-                font-size: 1em;
-                letter-spacing: 4px;
-                &:hover{
-                    transform: scale(1.1);
-                    transition: .2s;
+            .boton {
+                background: #d9c334;
+                background-image: -webkit-linear-gradient(top, #d9c334, #b8742b);
+                background-image: -moz-linear-gradient(top, #d9c334, #b8742b);
+                background-image: -ms-linear-gradient(top, #d9c334, #b8742b);
+                background-image: -o-linear-gradient(top, #d9c334, #b8742b);
+                background-image: linear-gradient(to bottom, #d9c334, #b8742b);
+                -webkit-border-radius: 19;
+                -moz-border-radius: 19;
+                border-radius: 19px;
+                -webkit-box-shadow: 4px 4px 16px #b04d02;
+                -moz-box-shadow: 4px 4px 16px #b04d02;
+                box-shadow: 4px 4px 16px #b04d02;
+                font-family: Arial;
+                color: #000000;
+                font-size: 30px;
+                padding: 6px 20px 9px 20px;
+                text-decoration: none;
+                border: none;
+                &:hover {
+                    background: #fcbc3c;
+                    text-decoration: none;
                 }
             }
         }
@@ -92,12 +107,28 @@ h1{
             grid-row: 2/3;
             font-size: 1.9em;
             color: yellow;
-            .btn{
-                font-size:1em ;
-                letter-spacing: 4px;
-                &:hover{
-                    transform: scale(1.1);
-                    transition: .2s;
+            .boton {
+                background: #d9c334;
+                background-image: -webkit-linear-gradient(top, #d9c334, #b8742b);
+                background-image: -moz-linear-gradient(top, #d9c334, #b8742b);
+                background-image: -ms-linear-gradient(top, #d9c334, #b8742b);
+                background-image: -o-linear-gradient(top, #d9c334, #b8742b);
+                background-image: linear-gradient(to bottom, #d9c334, #b8742b);
+                -webkit-border-radius: 19;
+                -moz-border-radius: 19;
+                border-radius: 19px;
+                -webkit-box-shadow: 4px 4px 16px #b04d02;
+                -moz-box-shadow: 4px 4px 16px #b04d02;
+                box-shadow: 4px 4px 16px #b04d02;
+                font-family: Arial;
+                color: #000000;
+                font-size: 30px;
+                padding: 6px 20px 9px 20px;
+                text-decoration: none;
+                border: none;
+                &:hover {
+                    background: #fcbc3c;
+                    text-decoration: none;
                 }
             }
         }
@@ -149,12 +180,13 @@ h1{
 
 // Mixins - decoracion
 /* Mixins */
-@mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3) {
+@mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3, $transformh3:translateX(-280%), $fonth3:2em) {
     color: $colortitulo;
     width: 250px;
     height: 400px;
     position: relative;
     background-image: $imagen;
+    background-size: 100% 100%;
     overflow: hidden;
     &::before{
         position: absolute;
@@ -188,11 +220,11 @@ h1{
         transition: all .6s;
     }
     h3{
-        font-size: 2em;
+        font-size: $fonth3;
         position: absolute;
         bottom:$bottomh3;
         left: $lefth3;
-        transform: translateX(-280%);
+        transform: $transformh3;
     }
 }
 @mixin decoracionright($imagen, $colorlineas, $colortitulo,$toph3, $righth3) {
@@ -201,6 +233,7 @@ h1{
     height: 400px;
     position: relative;
     background-image: $imagen;
+    background-size: 100% 100%;
     overflow: hidden;
     &::before{
         position: absolute;
@@ -245,16 +278,16 @@ h1{
     @include decoracion (url(../imagenes/galerialluvia.jpg), $color-amarillo, $color-amarillo, 50px,156px)
 }
 .contenedor-decoracion2{
-    @include decoracionright(url(../imagenes/cactus.jpg),green ,green,12px, 20px )
+    @include decoracionright(url(../imagenes/rejaslindas.jpg),green ,green,12px, 20px )
 }
 .contenedor-decoracion3{
     @include decoracionright(url(../imagenes/entradamod.png),red ,red,60px,60px)
 }
 .contenedor-decoracion4{
-    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+    @include decoracion(url(../imagenes/atrapacuentos.jpg), #0aa6ac ,#0aa6ac,50px,156px, translateX(-450%), 2.5em)
 }
 .contenedor-decoracion5{
-    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+    @include decoracionright(url(../imagenes/adamantium.jpg),#b3147e ,#b3147e,200px,10px)
 }
 
 @media screen and (max-width: 1311px) {
@@ -283,6 +316,10 @@ h1{
 @media screen and (max-width:768px) {
     .contenedor-pasillo{
         display: block;
+        padding-bottom: 20px;
+        .contenedor-parrafo{
+            margin: 10px 0;
+        }
         .contenedor-imgpasillo{
             .pasillo{
                 .img-pasillo{
@@ -297,8 +334,17 @@ h1{
     }
     .contenedor-cartel{
         display: block;
-        .img-cartel{
-            width: 70%;
+        padding-top: 20px;
+        .contenedor-parrafoii{
+            margin: 10px 0
+        }
+        .contenedor-letrero{
+            .letrero{
+                &:hover{
+                    transform: scale(.95);
+                    transition: .9s;
+                }
+            }
         }
     }
 }
@@ -335,7 +381,6 @@ h1{
     }
 }
 @media screen and (max-width:950px) {
-    
     .contenedor-pasillo{
         .contenedor-imgpasillo{
             .pasillo{
@@ -355,6 +400,14 @@ h1{
         .contenedor-parrafoii{
             .parrafoii{
                 font-size: 1.2em;
+            }
+        }
+        .contenedor-letrero{
+            .letrero{
+                .img-cartel{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
             }
         }
     }

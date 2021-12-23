@@ -2,7 +2,7 @@
 
 .contenedor-frente{
     background-image: url(../imagenes/frentepaseocolonialmod.jpg);
-    height: 100vh;
+    height: 90vh;
     background-size: 100% 100%;
     @media screen and (max-width:768px){
         height: 70vh;
@@ -20,6 +20,9 @@
 #nosotros{
     background: rgb(229,178,93);
     background: linear-gradient(0deg, rgba(229,178,93,1) 13%, rgba(214,140,78,1) 77%);
+    -webkit-box-shadow: 9px 9px 15px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 9px 9px 15px -1px rgba(0,0,0,0.52);
+    box-shadow: 9px 9px 15px -1px rgba(0,0,0,0.52);
     .row{
         
         .col-12{
@@ -54,15 +57,15 @@
 }
 
 
-
 // Mixins - decoracion
 /* Mixins */
-@mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3) {
+@mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3, $transformh3:translateX(-280%), $fonth3:2em) {
     color: $colortitulo;
     width: 250px;
     height: 400px;
     position: relative;
     background-image: $imagen;
+    background-size: 100% 100%;
     overflow: hidden;
     &::before{
         position: absolute;
@@ -96,11 +99,11 @@
         transition: all .6s;
     }
     h3{
-        font-size: 2em;
+        font-size: $fonth3;
         position: absolute;
         bottom:$bottomh3;
         left: $lefth3;
-        transform: translateX(-280%);
+        transform: $transformh3;
     }
 }
 @mixin decoracionright($imagen, $colorlineas, $colortitulo,$toph3, $righth3) {
@@ -109,6 +112,7 @@
     height: 400px;
     position: relative;
     background-image: $imagen;
+    background-size: 100% 100%;
     overflow: hidden;
     &::before{
         position: absolute;
@@ -153,16 +157,16 @@
     @include decoracion (url(../imagenes/galerialluvia.jpg), $color-amarillo, $color-amarillo, 50px,156px)
 }
 .contenedor-decoracion2{
-    @include decoracionright(url(../imagenes/cactus.jpg),green ,green,12px, 20px )
+    @include decoracionright(url(../imagenes/rejaslindas.jpg),green ,green,12px, 20px )
 }
 .contenedor-decoracion3{
     @include decoracionright(url(../imagenes/entradamod.png),red ,red,60px,60px)
 }
 .contenedor-decoracion4{
-    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+    @include decoracion(url(../imagenes/atrapacuentos.jpg), #0aa6ac ,#0aa6ac,50px,156px, translateX(-450%), 2.5em)
 }
 .contenedor-decoracion5{
-    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+    @include decoracionright(url(../imagenes/adamantium.jpg),#b3147e ,#b3147e,200px,10px)
 }
 
 @media screen and (max-width: 1311px) {
