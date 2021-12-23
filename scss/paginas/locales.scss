@@ -1,7 +1,7 @@
 .locales-carousel{
     height: 100%;
 
-    .local-i{
+    .local-1{
         .container-fluid{
             width: 40%;
             background-image: url(../imagenes/fondoheader.jpg);
@@ -13,7 +13,19 @@
             }
         }
     }
-    .local-ii{
+    .local-2{
+        .container-fluid{
+            width: 40%;
+            background-image: url(../imagenes/fondoheader.jpg);
+            @media screen and (max-width:576px) {
+                width: 90%;
+            }
+            .subtitulo-local2{
+                color: whitesmoke;
+            }
+        }
+    }
+    .local-3{
         .container-fluid{
             width: 40%;
             background-image: url(../imagenes/fondoheader.jpg);

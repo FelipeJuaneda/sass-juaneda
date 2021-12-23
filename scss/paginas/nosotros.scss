@@ -1,3 +1,20 @@
+/* Cartel Frente */
+
+.contenedor-frente{
+    background-image: url(../imagenes/frentepaseocolonialmod.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    @media screen and (max-width:768px){
+        height: 70vh;
+    }
+    @media screen and (max-width:425px){
+        height: 50vh;
+    }
+}
+
+
+
+
 /* Sobre nosotros */
 
 #nosotros{
@@ -6,7 +23,21 @@
     .row{
         
         .col-12{
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img-logonos{
+                height: 80px;
+                width: 90%;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 1s;
+                    @media screen and (max-width:768px){
+                        transform: scale(.9);
+                        transition: 1s;
+                    }
+                }
+            }
             .img-gral{
                 opacity: 0.9;
                 &:hover{
@@ -22,27 +53,135 @@
     }
 }
 
-/* Carousele Decorativo */
 
-.container-fluid{
-    background: rgb(214,140,78);
-    background: linear-gradient(0deg, rgba(214,140,78,1) 13%, rgba(229,178,93,1) 71%);
-    .row{
-        .col{
-            .carousel{
-                .carousel-inner{
-                    @media screen and (max-width:768px) {
-                        height: 40vh;
-                        width: 100%;
-                    }
-                    
-                }
-                
-                
-            }
+
+// Mixins - decoracion
+/* Mixins */
+@mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3) {
+    color: $colortitulo;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: $imagen;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        right: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &:hover{
+        h3{
+            transform: translateX(0%);
+            transition: all .6s;
         }
+        &::before, &::after{
+            width: $hover-anchura;
+        }
+        transform: scale(.98);
+        transition: all .6s;
+    }
+    h3{
+        font-size: 2em;
+        position: absolute;
+        bottom:$bottomh3;
+        left: $lefth3;
+        transform: translateX(-280%);
     }
 }
+@mixin decoracionright($imagen, $colorlineas, $colortitulo,$toph3, $righth3) {
+    color: $colortitulo;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: $imagen;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        right: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &:hover{
+        h3{
+            transform: translateX(0%);
+            transition: all .6s;
+        }
+        &::before, &::after{
+            width: $hover-anchura;
+        }
+        transform: scale(.98);
+        transition: all .6s;
+    }
+    h3{
+        font-size: 2.2em;
+        position: absolute;
+        top:$toph3;
+        right: $righth3;
+        transform: translateX(-280%);
+    }
+}
+.contenedor-decoracion1{
+    @include decoracion (url(../imagenes/galerialluvia.jpg), $color-amarillo, $color-amarillo, 50px,156px)
+}
+.contenedor-decoracion2{
+    @include decoracionright(url(../imagenes/cactus.jpg),green ,green,12px, 20px )
+}
+.contenedor-decoracion3{
+    @include decoracionright(url(../imagenes/entradamod.png),red ,red,60px,60px)
+}
+.contenedor-decoracion4{
+    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+}
+.contenedor-decoracion5{
+    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+}
 
-
-
+@media screen and (max-width: 1311px) {
+    .contenedor-decoracion5{
+        display: none;
+    }
+}
+@media screen and (max-width: 1059px) {
+    .contenedor-decoracion4{
+        display: none;
+    }
+}
+@media screen and (max-width: 808px) {
+    .contenedor-decoracion3{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .contenedor-decoracion2{
+        display: none;
+    }
+}
