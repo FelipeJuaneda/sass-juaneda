@@ -50,33 +50,41 @@ footer{
         .footer-imgs{
             display: flex;
             justify-content: space-evenly;
-            
-            .insta{
-                width: 30px;
-                &:hover{
-                    transform: rotate3d(1, 1, 1, 360deg);
-                    -webkit-transform: rotate3d(1, 1, 1, 360deg);
-                    transition: 1s;
-                }
-            }
-            .whats{
-                width: 30px;
-                &:hover{
-                    transform: rotate3d(1, 1, 1, 360deg);
-                    -webkit-transform: rotate3d(1, 1, 1, 360deg);
-                    transition: 1s;
-                }
-            }
-            .face{
-                width: 30px;
-                &:hover{
-                    transform: rotate3d(1, 1, 1, 360deg);
-                    -webkit-transform: rotate3d(1, 1, 1, 360deg);
-                    transition: 1s;
-                }
-            }
         }
     }
+}
+
+//==============
+// Mapa - tamaño de imgs redes
+
+$ancho: (
+    insta: 30px,
+    whats: 30px,
+    face: 30px,
+);
+@each $red, $width in $ancho {
+    .red-#{$red} {
+        width: $width;
+    }
+}
+
+//=============
+// Extend - hover de redes
+
+.red-insta{
+    &:hover{
+        transform: rotate3d(1, 1, 1, 360deg);
+        -webkit-transform: rotate3d(1, 1, 1, 360deg);
+        transition: all 1s;
+    }
+}
+
+.red-whats{
+    @extend .red-insta;
+}
+
+.red-face{
+    @extend .red-whats;
 }
 
 @media screen and (max-width:768px) {

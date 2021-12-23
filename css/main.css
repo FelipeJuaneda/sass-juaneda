@@ -115,24 +115,20 @@ footer {
     footer .footer-redes .footer-imgs {
       display: flex;
       justify-content: space-evenly; }
-      footer .footer-redes .footer-imgs .insta {
-        width: 30px; }
-        footer .footer-redes .footer-imgs .insta:hover {
-          transform: rotate3d(1, 1, 1, 360deg);
-          -webkit-transform: rotate3d(1, 1, 1, 360deg);
-          transition: 1s; }
-      footer .footer-redes .footer-imgs .whats {
-        width: 30px; }
-        footer .footer-redes .footer-imgs .whats:hover {
-          transform: rotate3d(1, 1, 1, 360deg);
-          -webkit-transform: rotate3d(1, 1, 1, 360deg);
-          transition: 1s; }
-      footer .footer-redes .footer-imgs .face {
-        width: 30px; }
-        footer .footer-redes .footer-imgs .face:hover {
-          transform: rotate3d(1, 1, 1, 360deg);
-          -webkit-transform: rotate3d(1, 1, 1, 360deg);
-          transition: 1s; }
+
+.red-insta, .red-whats, .red-face {
+  width: 30px; }
+
+.red-whats, .red-face {
+  width: 30px; }
+
+.red-face {
+  width: 30px; }
+
+.red-insta:hover, .red-whats:hover, .red-face:hover {
+  transform: rotate3d(1, 1, 1, 360deg);
+  -webkit-transform: rotate3d(1, 1, 1, 360deg);
+  transition: all 1s; }
 
 @media screen and (max-width: 768px) {
   footer .volver-arriba {
@@ -176,17 +172,21 @@ h1 .colonial {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-column: 6/12;
-    grid-row: 1/2; }
+    grid-row: 1/2;
+    background-color: #2b303a;
+    border-radius: 10px; }
     .contenedor-pasillo .contenedor-parrafo .parrafo {
       font-size: 1.7em;
-      color: whitesmoke; }
+      color: whitesmoke;
+      padding: 20px; }
       .contenedor-pasillo .contenedor-parrafo .parrafo .lh-base {
         font-family: Arial, Helvetica, sans-serif; }
     .contenedor-pasillo .contenedor-parrafo .contenedor-boton {
       font-size: 1.9em;
       color: yellow; }
       .contenedor-pasillo .contenedor-parrafo .contenedor-boton .btn {
-        font-size: 1em; }
+        font-size: 1em;
+        letter-spacing: 4px; }
         .contenedor-pasillo .contenedor-parrafo .contenedor-boton .btn:hover {
           transform: scale(1.1);
           transition: .2s; }
@@ -204,7 +204,7 @@ h1 .colonial {
     .contenedor-cartel .contenedor-parrafoii .parrafoii {
       font-size: 1.7em;
       grid-row: 1/2;
-      color: whitesmoke; }
+      color: #ffffff; }
       .contenedor-cartel .contenedor-parrafoii .parrafoii .lh-base {
         font-family: Arial, Helvetica, sans-serif; }
     .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos {
@@ -212,7 +212,8 @@ h1 .colonial {
       font-size: 1.9em;
       color: yellow; }
       .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn {
-        font-size: 1em; }
+        font-size: 1em;
+        letter-spacing: 4px; }
         .contenedor-cartel .contenedor-parrafoii .contenedor-botonnos .btn:hover {
           transform: scale(1.1);
           transition: .2s; }
@@ -236,226 +237,6 @@ h1 .colonial {
   .decoracion-cont .decoracion {
     display: flex;
     justify-content: space-around; }
-    .decoracion-cont .decoracion .contenedor-decoracioni {
-      color: yellow;
-      width: 250px;
-      height: 400px;
-      position: relative;
-      background-image: url(../imagenes/galerialluvia.jpg);
-      overflow: hidden; }
-      .decoracion-cont .decoracion .contenedor-decoracioni::before {
-        position: absolute;
-        content: "";
-        top: 5px;
-        left: 10px;
-        width: 0;
-        height: 2px;
-        background-color: yellow;
-        transition: all .6s; }
-      .decoracion-cont .decoracion .contenedor-decoracioni::after {
-        position: absolute;
-        content: "";
-        bottom: 5px;
-        right: 10px;
-        width: 0;
-        height: 2px;
-        background-color: yellow;
-        transition: all .6s; }
-      .decoracion-cont .decoracion .contenedor-decoracioni:hover {
-        transform: scale(0.98);
-        transition: all .6s; }
-        .decoracion-cont .decoracion .contenedor-decoracioni:hover h3 {
-          transform: translateX(0%);
-          transition: all .6s; }
-        .decoracion-cont .decoracion .contenedor-decoracioni:hover::before, .decoracion-cont .decoracion .contenedor-decoracioni:hover::after {
-          width: 80%; }
-      .decoracion-cont .decoracion .contenedor-decoracioni h3 {
-        font-size: 2em;
-        position: absolute;
-        bottom: 50px;
-        left: 156px;
-        transform: translateX(-280%); }
-    .decoracion-cont .decoracion .contenedor-decoracionii {
-      color: green;
-      width: 250px;
-      height: 400px;
-      position: relative;
-      background-image: url(../imagenes/cactus.jpg);
-      background-position: center;
-      overflow: hidden; }
-      .decoracion-cont .decoracion .contenedor-decoracionii::before {
-        position: absolute;
-        content: "";
-        top: 5px;
-        left: 10px;
-        width: 0;
-        height: 2px;
-        background-color: green;
-        transition: all .6s; }
-      .decoracion-cont .decoracion .contenedor-decoracionii::after {
-        position: absolute;
-        content: "";
-        bottom: 5px;
-        right: 10px;
-        width: 0;
-        height: 2px;
-        background-color: green;
-        transition: all .6s; }
-      .decoracion-cont .decoracion .contenedor-decoracionii:hover {
-        transform: scale(0.98);
-        transition: all .6s; }
-        .decoracion-cont .decoracion .contenedor-decoracionii:hover h3, .decoracion-cont .decoracion .contenedor-decoracionii:hover p {
-          transform: translateX(0%);
-          transition: all .6s; }
-        .decoracion-cont .decoracion .contenedor-decoracionii:hover::before, .decoracion-cont .decoracion .contenedor-decoracionii:hover::after {
-          width: 80%; }
-      .decoracion-cont .decoracion .contenedor-decoracionii h3 {
-        font-size: 2.3em;
-        position: absolute;
-        top: 13px;
-        left: 70px;
-        transform: translateX(-210%); }
-      .decoracion-cont .decoracion .contenedor-decoracionii p {
-        font-size: 1.4em;
-        position: absolute;
-        bottom: 50px;
-        left: 100px;
-        transform: translateX(210%); }
-  .decoracion-cont .contenedor-decoracioniii {
-    color: yellow;
-    width: 250px;
-    height: 400px;
-    position: relative;
-    background-image: url(https://dummyimage.com/250x400/000/fff);
-    overflow: hidden; }
-    .decoracion-cont .contenedor-decoracioniii::before {
-      position: absolute;
-      content: "";
-      top: 5px;
-      left: 10px;
-      width: 0;
-      height: 2px;
-      background-color: yellow;
-      transition: all .6s; }
-    .decoracion-cont .contenedor-decoracioniii::after {
-      position: absolute;
-      content: "";
-      bottom: 5px;
-      right: 10px;
-      width: 0;
-      height: 2px;
-      background-color: yellow;
-      transition: all .6s; }
-    .decoracion-cont .contenedor-decoracioniii:hover {
-      transform: scale(0.98);
-      transition: all .6s; }
-      .decoracion-cont .contenedor-decoracioniii:hover h3, .decoracion-cont .contenedor-decoracioniii:hover p {
-        transform: translateX(0%);
-        transition: all .6s; }
-      .decoracion-cont .contenedor-decoracioniii:hover::before, .decoracion-cont .contenedor-decoracioniii:hover::after {
-        width: 80%; }
-    .decoracion-cont .contenedor-decoracioniii h3 {
-      font-size: 2em;
-      position: absolute;
-      top: 40px;
-      left: 70px;
-      transform: translateX(-210%); }
-    .decoracion-cont .contenedor-decoracioniii p {
-      font-size: 1.4em;
-      position: absolute;
-      bottom: 50px;
-      left: 100px;
-      transform: translateX(210%); }
-  .decoracion-cont .contenedor-decoracioniiii {
-    color: yellow;
-    width: 250px;
-    height: 400px;
-    position: relative;
-    background-image: url(https://dummyimage.com/250x400/000/fff);
-    overflow: hidden; }
-    .decoracion-cont .contenedor-decoracioniiii::before {
-      position: absolute;
-      content: "";
-      top: 5px;
-      left: 10px;
-      width: 0;
-      height: 2px;
-      background-color: yellow;
-      transition: all .6s; }
-    .decoracion-cont .contenedor-decoracioniiii::after {
-      position: absolute;
-      content: "";
-      bottom: 5px;
-      right: 10px;
-      width: 0;
-      height: 2px;
-      background-color: yellow;
-      transition: all .6s; }
-    .decoracion-cont .contenedor-decoracioniiii:hover {
-      transform: scale(0.98);
-      transition: all .6s; }
-      .decoracion-cont .contenedor-decoracioniiii:hover h3, .decoracion-cont .contenedor-decoracioniiii:hover p {
-        transform: translateX(0%);
-        transition: all .6s; }
-      .decoracion-cont .contenedor-decoracioniiii:hover::before, .decoracion-cont .contenedor-decoracioniiii:hover::after {
-        width: 80%; }
-    .decoracion-cont .contenedor-decoracioniiii h3 {
-      font-size: 2em;
-      position: absolute;
-      top: 40px;
-      left: 70px;
-      transform: translateX(-210%); }
-    .decoracion-cont .contenedor-decoracioniiii p {
-      font-size: 1.4em;
-      position: absolute;
-      bottom: 50px;
-      left: 100px;
-      transform: translateX(210%); }
-  .decoracion-cont .contenedor-decoracioniiiii {
-    color: yellow;
-    width: 250px;
-    height: 400px;
-    position: relative;
-    background-image: url(https://dummyimage.com/250x400/000/fff);
-    overflow: hidden; }
-    .decoracion-cont .contenedor-decoracioniiiii::before {
-      position: absolute;
-      content: "";
-      top: 5px;
-      left: 10px;
-      width: 0;
-      height: 2px;
-      background-color: yellow;
-      transition: all .6s; }
-    .decoracion-cont .contenedor-decoracioniiiii::after {
-      position: absolute;
-      content: "";
-      bottom: 5px;
-      right: 10px;
-      width: 0;
-      height: 2px;
-      background-color: yellow;
-      transition: all .6s; }
-    .decoracion-cont .contenedor-decoracioniiiii:hover {
-      transform: scale(0.98);
-      transition: all .6s; }
-      .decoracion-cont .contenedor-decoracioniiiii:hover h3, .decoracion-cont .contenedor-decoracioniiiii:hover p {
-        transform: translateX(0%);
-        transition: all .6s; }
-      .decoracion-cont .contenedor-decoracioniiiii:hover::before, .decoracion-cont .contenedor-decoracioniiiii:hover::after {
-        width: 80%; }
-    .decoracion-cont .contenedor-decoracioniiiii h3 {
-      font-size: 2em;
-      position: absolute;
-      top: 40px;
-      left: 70px;
-      transform: translateX(-210%); }
-    .decoracion-cont .contenedor-decoracioniiiii p {
-      font-size: 1.4em;
-      position: absolute;
-      bottom: 50px;
-      left: 100px;
-      transform: translateX(210%); }
   .decoracion-cont .parrafo-decora {
     display: flex;
     justify-content: center;
@@ -465,18 +246,223 @@ h1 .colonial {
       color: yellow; }
       .decoracion-cont .parrafo-decora .parrafo-deco span {
         color: #36da36; }
-  @media screen and (max-width: 1311px) {
-    .decoracion-cont .contenedor-decoracioniiiii {
-      display: none; } }
-  @media screen and (max-width: 1059px) {
-    .decoracion-cont .contenedor-decoracioniiii {
-      display: none; } }
-  @media screen and (max-width: 808px) {
-    .decoracion-cont .contenedor-decoracioniii {
-      display: none; } }
-  @media screen and (max-width: 550px) {
-    .decoracion-cont .contenedor-decoracionii {
-      display: none; } }
+
+/* Mixins */
+.contenedor-decoracion1 {
+  color: yellow;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  background-image: url(../imagenes/galerialluvia.jpg);
+  overflow: hidden; }
+  .contenedor-decoracion1::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion1::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    right: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion1:hover {
+    transform: scale(0.98);
+    transition: all .6s; }
+    .contenedor-decoracion1:hover h3 {
+      transform: translateX(0%);
+      transition: all .6s; }
+    .contenedor-decoracion1:hover::before, .contenedor-decoracion1:hover::after {
+      width: 80%; }
+  .contenedor-decoracion1 h3 {
+    font-size: 2em;
+    position: absolute;
+    bottom: 50px;
+    left: 156px;
+    transform: translateX(-280%); }
+
+.contenedor-decoracion2 {
+  color: green;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  background-image: url(../imagenes/cactus.jpg);
+  overflow: hidden; }
+  .contenedor-decoracion2::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: all .6s; }
+  .contenedor-decoracion2::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    right: 10px;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: all .6s; }
+  .contenedor-decoracion2:hover {
+    transform: scale(0.98);
+    transition: all .6s; }
+    .contenedor-decoracion2:hover h3 {
+      transform: translateX(0%);
+      transition: all .6s; }
+    .contenedor-decoracion2:hover::before, .contenedor-decoracion2:hover::after {
+      width: 80%; }
+  .contenedor-decoracion2 h3 {
+    font-size: 2.2em;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    transform: translateX(-280%); }
+
+.contenedor-decoracion3 {
+  color: yellow;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  background-image: url(https://dummyimage.com/250x400/000/fff);
+  overflow: hidden; }
+  .contenedor-decoracion3::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion3::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    right: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion3:hover {
+    transform: scale(0.98);
+    transition: all .6s; }
+    .contenedor-decoracion3:hover h3 {
+      transform: translateX(0%);
+      transition: all .6s; }
+    .contenedor-decoracion3:hover::before, .contenedor-decoracion3:hover::after {
+      width: 80%; }
+  .contenedor-decoracion3 h3 {
+    font-size: 2em;
+    position: absolute;
+    bottom: 50px;
+    left: 156px;
+    transform: translateX(-280%); }
+
+.contenedor-decoracion4 {
+  color: yellow;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  background-image: url(https://dummyimage.com/250x400/000/fff);
+  overflow: hidden; }
+  .contenedor-decoracion4::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion4::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    right: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion4:hover {
+    transform: scale(0.98);
+    transition: all .6s; }
+    .contenedor-decoracion4:hover h3 {
+      transform: translateX(0%);
+      transition: all .6s; }
+    .contenedor-decoracion4:hover::before, .contenedor-decoracion4:hover::after {
+      width: 80%; }
+  .contenedor-decoracion4 h3 {
+    font-size: 2em;
+    position: absolute;
+    bottom: 50px;
+    left: 156px;
+    transform: translateX(-280%); }
+
+.contenedor-decoracion5 {
+  color: yellow;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  background-image: url(https://dummyimage.com/250x400/000/fff);
+  overflow: hidden; }
+  .contenedor-decoracion5::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion5::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    right: 10px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all .6s; }
+  .contenedor-decoracion5:hover {
+    transform: scale(0.98);
+    transition: all .6s; }
+    .contenedor-decoracion5:hover h3 {
+      transform: translateX(0%);
+      transition: all .6s; }
+    .contenedor-decoracion5:hover::before, .contenedor-decoracion5:hover::after {
+      width: 80%; }
+  .contenedor-decoracion5 h3 {
+    font-size: 2em;
+    position: absolute;
+    bottom: 50px;
+    left: 156px;
+    transform: translateX(-280%); }
+
+@media screen and (max-width: 1311px) {
+  .contenedor-decoracion5 {
+    display: none; } }
+
+@media screen and (max-width: 1059px) {
+  .contenedor-decoracion4 {
+    display: none; } }
+
+@media screen and (max-width: 808px) {
+  .contenedor-decoracion3 {
+    display: none; } }
+
+@media screen and (max-width: 550px) {
+  .contenedor-decoracion2 {
+    display: none; } }
 
 /* Media de contenedor pasillo y cartel */
 @media screen and (max-width: 768px) {

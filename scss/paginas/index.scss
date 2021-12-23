@@ -34,9 +34,12 @@ h1{
         grid-template-rows: repeat(2,auto);
         grid-column: 6/12;
         grid-row: 1/2;
+        background-color: $color-colonial;
+        border-radius: 10px;
         .parrafo{
             font-size: 1.7em;
             color: whitesmoke;
+            padding: 20px;
             .lh-base{
                 font-family:Arial, Helvetica, sans-serif;
             }
@@ -46,6 +49,7 @@ h1{
             color: yellow;
             .btn{
                 font-size: 1em;
+                letter-spacing: 4px;
                 &:hover{
                     transform: scale(1.1);
                     transition: .2s;
@@ -70,7 +74,7 @@ h1{
         .parrafoii{
             font-size: 1.7em;
             grid-row: 1/2;
-            color: whitesmoke;
+            color: $color-blanco;
             .lh-base{
                 font-family:Arial, Helvetica, sans-serif;
             }
@@ -81,6 +85,7 @@ h1{
             color: yellow;
             .btn{
                 font-size:1em ;
+                letter-spacing: 4px;
                 &:hover{
                     transform: scale(1.1);
                     transition: .2s;
@@ -118,265 +123,6 @@ h1{
     .decoracion{
         display: flex;
         justify-content: space-around;
-        .contenedor-decoracioni{
-            color: $color-amarillo;
-            width: 250px;
-            height: 400px;
-            position: relative;
-            background-image: url(../imagenes/galerialluvia.jpg);
-            overflow: hidden;
-            &::before{
-                position: absolute;
-                content: "";
-                top: 5px;
-                left: 10px;
-                width: 0;
-                height: 2px;
-                background-color: $color-amarillo;
-                transition: all .6s;
-            }
-            &::after{
-                position: absolute;
-                content: "";
-                bottom: 5px;
-                right: 10px;
-                width: 0;
-                height: 2px;
-                background-color: $color-amarillo;
-                transition: all .6s;
-            }
-            &:hover{
-                h3{
-                    transform: translateX(0%);
-                    transition: all .6s;
-                }
-                &::before, &::after{
-                    width: $hover-anchura;
-                }
-                transform: scale(.98);
-                transition: all .6s;
-            }
-            h3{
-                font-size: 2em;
-                position: absolute;
-                bottom:50px;
-                left: 156px;
-                transform: translateX(-280%);
-            }
-        }
-        .contenedor-decoracionii{
-            color: green;
-            width: 250px;
-            height: 400px;
-            position: relative;
-            background-image: url(../imagenes/cactus.jpg);
-            background-position: center;
-            overflow: hidden;
-            &::before{
-                position: absolute;
-                content: "";
-                top: 5px;
-                left: 10px;
-                width: 0;
-                height: 2px;
-                background-color: green;
-                transition: all .6s;
-            }
-            &::after{
-                position: absolute;
-                content: "";
-                bottom: 5px;
-                right: 10px;
-                width: 0;
-                height: 2px;
-                background-color: green;
-                transition: all .6s;
-            }
-            &:hover{
-                h3, p{
-                    transform: translateX(0%);
-                    transition: all .6s;
-                }
-                &::before, &::after{
-                    width: $hover-anchura;
-                }
-                transform: scale(.98);
-                transition: all .6s;
-            }
-            h3{
-                font-size: 2.3em;
-                position: absolute;
-                top: 13px;
-                left: 70px;
-                transform: translateX(-210%);
-            }
-            p{
-                font-size: 1.4em;
-                position: absolute;
-                bottom:50px;
-                left: 100px;
-                transform: translateX(210%);
-            }
-        }
-    }
-    .contenedor-decoracioniii{
-        color: $color-amarillo;
-        width: 250px;
-        height: 400px;
-        position: relative;
-        background-image: url(https://dummyimage.com/250x400/000/fff);
-        overflow: hidden;
-        &::before{
-            position: absolute;
-            content: "";
-            top: 5px;
-            left: 10px;
-            width: 0;
-            height: 2px;
-            background-color: $color-amarillo;
-            transition: all .6s;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            bottom: 5px;
-            right: 10px;
-            width: 0;
-            height: 2px;
-            background-color: $color-amarillo;
-            transition: all .6s;
-        }
-        &:hover{
-            h3, p{
-                transform: translateX(0%);
-                transition: all .6s;
-            }
-            &::before, &::after{
-                width: $hover-anchura;
-            }
-            transform: scale(.98);
-            transition: all .6s;
-        }
-        h3{
-            font-size: 2em;
-            position: absolute;
-            top: 40px;
-            left: 70px;
-            transform: translateX(-210%);
-        }
-        p{
-            font-size: 1.4em;
-            position: absolute;
-            bottom:50px;
-            left: 100px;
-            transform: translateX(210%);
-        }
-    }
-    .contenedor-decoracioniiii{
-        color: $color-amarillo;
-        width: 250px;
-        height: 400px;
-        position: relative;
-        background-image: url(https://dummyimage.com/250x400/000/fff);
-        overflow: hidden;
-        &::before{
-            position: absolute;
-            content: "";
-            top: 5px;
-            left: 10px;
-            width: 0;
-            height: 2px;
-            background-color: $color-amarillo;
-            transition: all .6s;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            bottom: 5px;
-            right: 10px;
-            width: 0;
-            height: 2px;
-            background-color: $color-amarillo;
-            transition: all .6s;
-        }
-        &:hover{
-            h3, p{
-                transform: translateX(0%);
-                transition: all .6s;
-            }
-            &::before, &::after{
-                width: $hover-anchura;
-            }
-            transform: scale(.98);
-            transition: all .6s;
-        }
-        h3{
-            font-size: 2em;
-            position: absolute;
-            top: 40px;
-            left: 70px;
-            transform: translateX(-210%);
-        }
-        p{
-            font-size: 1.4em;
-            position: absolute;
-            bottom:50px;
-            left: 100px;
-            transform: translateX(210%);
-        }
-    }
-    .contenedor-decoracioniiiii{
-        color: $color-amarillo;
-        width: 250px;
-        height: 400px;
-        position: relative;
-        background-image: url(https://dummyimage.com/250x400/000/fff);
-        overflow: hidden;
-        &::before{
-            position: absolute;
-            content: "";
-            top: 5px;
-            left: 10px;
-            width: 0;
-            height: 2px;
-            background-color: $color-amarillo;
-            transition: all .6s;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            bottom: 5px;
-            right: 10px;
-            width: 0;
-            height: 2px;
-            background-color: $color-amarillo;
-            transition: all .6s;
-        }
-        &:hover{
-            h3, p{
-                transform: translateX(0%);
-                transition: all .6s;
-            }
-            &::before, &::after{
-                width: $hover-anchura;
-            }
-            transform: scale(.98);
-            transition: all .6s;
-        }
-        h3{
-            font-size: 2em;
-            position: absolute;
-            top: 40px;
-            left: 70px;
-            transform: translateX(-210%);
-        }
-        p{
-            font-size: 1.4em;
-            position: absolute;
-            bottom:50px;
-            left: 100px;
-            transform: translateX(210%);
-        }
     }
     .parrafo-decora{
         display: flex;
@@ -390,28 +136,138 @@ h1{
             }
         }
     }
-    @media screen and (max-width: 1311px) {
-        .contenedor-decoracioniiiii{
-            display: none;
-        }
-    }
-    @media screen and (max-width: 1059px) {
-        .contenedor-decoracioniiii{
-            display: none;
-        }
-    }
-    @media screen and (max-width: 808px) {
-        .contenedor-decoracioniii{
-            display: none;
-        }
-    }
-    @media screen and (max-width: 550px) {
-        .contenedor-decoracionii{
-            display: none;
-        }
-    }
 }
 
+// Mixins - decoracion
+/* Mixins */
+@mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3) {
+    color: $colortitulo;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: $imagen;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        right: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &:hover{
+        h3{
+            transform: translateX(0%);
+            transition: all .6s;
+        }
+        &::before, &::after{
+            width: $hover-anchura;
+        }
+        transform: scale(.98);
+        transition: all .6s;
+    }
+    h3{
+        font-size: 2em;
+        position: absolute;
+        bottom:$bottomh3;
+        left: $lefth3;
+        transform: translateX(-280%);
+    }
+}
+@mixin decoracionright($imagen, $colorlineas, $colortitulo,$toph3, $righth3) {
+    color: $colortitulo;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    background-image: $imagen;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        right: 10px;
+        width: 0;
+        height: 2px;
+        background-color: $colorlineas;
+        transition: all .6s;
+    }
+    &:hover{
+        h3{
+            transform: translateX(0%);
+            transition: all .6s;
+        }
+        &::before, &::after{
+            width: $hover-anchura;
+        }
+        transform: scale(.98);
+        transition: all .6s;
+    }
+    h3{
+        font-size: 2.2em;
+        position: absolute;
+        top:$toph3;
+        right: $righth3;
+        transform: translateX(-280%);
+    }
+}
+.contenedor-decoracion1{
+    @include decoracion (url(../imagenes/galerialluvia.jpg), $color-amarillo, $color-amarillo, 50px,156px)
+}
+.contenedor-decoracion2{
+    @include decoracionright(url(../imagenes/cactus.jpg),green ,green,12px, 20px )
+}
+.contenedor-decoracion3{
+    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+}
+.contenedor-decoracion4{
+    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+}
+.contenedor-decoracion5{
+    @include decoracion(url(https://dummyimage.com/250x400/000/fff),$color-amarillo ,$color-amarillo,50px,156px)
+}
+
+@media screen and (max-width: 1311px) {
+    .contenedor-decoracion5{
+        display: none;
+    }
+}
+@media screen and (max-width: 1059px) {
+    .contenedor-decoracion4{
+        display: none;
+    }
+}
+@media screen and (max-width: 808px) {
+    .contenedor-decoracion3{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .contenedor-decoracion2{
+        display: none;
+    }
+}
 
 /* Media de contenedor pasillo y cartel */
 
