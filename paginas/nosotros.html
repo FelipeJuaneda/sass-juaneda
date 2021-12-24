@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <!-- Header Navegador -->
     <header class="cabeza">
         <nav class="navegador">
             <a class="link-logo" data-aos="fade-right" data-aos-duration="1500" href="../index.html">
@@ -53,6 +54,7 @@
             </ul>
         </nav>
     </header>
+
     <!-- Cartel frente -->
     <section class="contenedor-frente">
 
@@ -78,7 +80,6 @@
     </main>
 
     <!-- DECORACION -->
-
     <section class="decoracion-cont mt-5">
         <section class="decoracion">
             <div class="contenedor-decoracion1" data-aos="fade-down" data-aos-duration="1000">
@@ -91,10 +92,10 @@
                 <h3>Entrada</h3>
             </div>
             <div class="contenedor-decoracion4" data-aos="zoom-in-up" data-aos-duration="1500">
-
+                <h3>Arte</h3>
             </div>
             <div class="contenedor-decoracion5" data-aos="fade-down" data-aos-duration="1000">
-
+                <h3>Colonial</h3>
             </div>
         </section>
         <div class="parrafo-decora">
@@ -110,7 +111,6 @@
 
 
     <!-- FOOTER -->
-
     <footer>
         <div class="volver-arriba">
             <a class="link-hover" href="#">Ir arriba!</a>
@@ -119,7 +119,7 @@
             <p class="pagcreada">Pagina creada por <a class="link-hover"
                     href="https://www.instagram.com/felipejuaneda/?hl=es" target="_blank">Felipe</a></p>
         </div>
-
+        <!-- Redes y Logo-->
         <div class="footer-redes">
             <img class="logo-footer" src="../imagenes/logo-galeria-nuevo.png" alt="logo2">
             <div class="footer-imgs">
@@ -133,7 +133,6 @@
                 <a href="https://www.facebook.com/felipe.juaneda/" target="_blank">
                     <img class="red-face" src="../imagenes/face.png" alt="facebook"></a>
             </div>
-
         </div>
     </footer>
 
@@ -145,7 +144,9 @@
     <!-- Link Aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: 'mobile'
+        });
     </script>
 </body>
 
