@@ -50,7 +50,7 @@ body {
           width: 0%;
           position: absolute;
           left: 0%;
-          bottom: -12px;
+          bottom: -10px;
           transition: 0.3s ease-out; }
         .cabeza .navegador ul li:hover::before {
           width: 100%; }
