@@ -27,7 +27,8 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    /* boton */ }
     .cabeza .navegador .link-logo {
       display: flex;
       justify-content: center;
@@ -35,6 +36,14 @@ body {
       .cabeza .navegador .link-logo .img-logo {
         margin: 20px 20px;
         width: 50%; }
+    .cabeza .navegador .boton-navegador {
+      color: yellow;
+      background: none;
+      border: none;
+      font-size: 40px;
+      padding: 0 15px;
+      display: none;
+      cursor: pointer; }
     .cabeza .navegador ul {
       margin: 15px 20px; }
       .cabeza .navegador ul li {
@@ -59,19 +68,40 @@ body {
           color: yellow; }
 
 @media screen and (max-width: 768px) {
-  .cabeza .navegador {
-    justify-content: center; }
-  .cabeza .navegador .link-logo .img-logo {
-    width: 75%; }
-  .cabeza .navegador ul li {
-    font-size: 20px;
-    display: block; } }
-
-@media screen and (max-width: 375px) {
-  .cabeza .navegador .link-logo .img-logo {
-    margin-left: 60px; }
-  .cabeza .navegador ul li {
-    font-size: 1em; } }
+  .cabeza {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1; }
+    .cabeza .navegador .link-logo .img-logo {
+      width: 35%;
+      margin: 0 20px; }
+    .cabeza .navegador .boton-navegador {
+      display: block; }
+    .cabeza .navegador .menu-lista {
+      margin: 0;
+      padding: 20px 0;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      height: calc(100% - 70px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left .7s;
+      background-image: url(../imagenes/parednaranja.jpg);
+      color: #2b303a; }
+      .cabeza .navegador .menu-lista li {
+        display: block;
+        line-height: 50px; }
+        .cabeza .navegador .menu-lista li::before {
+          display: none; }
+        .cabeza .navegador .menu-lista li a {
+          color: #2b303a;
+          font-size: 1.3em; }
+    .cabeza .navegador .menu-lista-visible {
+      left: 0%; } }
 
 footer {
   display: grid;

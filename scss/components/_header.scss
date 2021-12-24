@@ -27,6 +27,16 @@
                 width: 50%;
             }
         }
+        /* boton */
+        .boton-navegador{
+            color: $color-amarillo;
+            background: none;
+            border: none;
+            font-size: 40px;
+            padding: 0 15px;
+            display: none;
+            cursor: pointer;
+        }
         ul{
             margin: 15px 20px;
             li{
@@ -50,32 +60,58 @@
                 }
                 a{
                     text-decoration: none;
-                    color: yellow
+                    color: yellow;
                 }
             }
         }
     }
 
 }
-
 @media screen and (max-width:768px) {
-    .cabeza .navegador{
-        justify-content: center;
-    }
-    .cabeza .navegador .link-logo .img-logo{
-        width: 75%;
-    }
-    .cabeza .navegador ul li{
-        font-size: 20px;
-        display:block
-    }
-}
-
-@media screen and (max-width:375px) {
-    .cabeza .navegador .link-logo .img-logo{
-        margin-left: 60px;
-    }
-    .cabeza .navegador ul li{
-        font-size: 1em;
+    .cabeza{
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        .navegador{
+            .link-logo{
+                .img-logo{
+                    width: 35%;
+                    margin: 0 20px;
+                }
+            }
+            .boton-navegador{
+                display: block;
+            }
+            .menu-lista{
+                margin: 0;
+                padding: 20px 0;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                height: calc(100% - 70px);
+                overflow-y: auto;
+                left: 100%;
+                transition: left .7s;
+                background-image: url(../imagenes/parednaranja.jpg);
+                color: $color-colonial;
+                li{
+                    display: block;
+                    line-height: 50px;
+                    &::before{
+                        display: none;
+                    }
+                    a{
+                        color: $color-colonial;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .menu-lista-visible{
+                left: 0%;
+            }
+        }
     }
 }
