@@ -1,7 +1,7 @@
 {
   "name": "sass-juaneda",
   "version": "1.0.0",
-  "description": "",
+  "description": "Galeria comercial ubicada en Cordoba - Guemes Belgrano 773, de apariencia colonial, colorida y con locales unicos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
