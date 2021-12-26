@@ -41,7 +41,7 @@
             .img-gral{
                 opacity: 0.9;
                 &:hover{
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                     transition: 1s;
                     @media screen and (max-width:768px){
                         transform: scale(.9);

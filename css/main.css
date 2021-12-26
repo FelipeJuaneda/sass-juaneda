@@ -647,7 +647,7 @@ h1 .colonial {
     #nosotros .row .col-12 .img-gral {
       opacity: 0.9; }
       #nosotros .row .col-12 .img-gral:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: 1s; }
         @media screen and (max-width: 768px) {
           #nosotros .row .col-12 .img-gral:hover {
