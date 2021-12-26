@@ -2,7 +2,7 @@
 <h1 align="center">Hola 👋, Soy Felipe Juaneda</h1>
 <h3 align="center">Estudiante de programación Fullstack en Coderhouse</h3>
 
-- 👨‍💻 Trabajando en : [Galeria Paseo Colonial](https://paseocolonial.000webhostapp.com/)
+- 👨‍💻 Trabajando en : [Galeria Paseo Colonial](https://felipejuaneda.github.io/sass-juaneda/)
 
 - 📫 Contacto **felipejua9@gmail.com**
 
