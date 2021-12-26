@@ -77,7 +77,8 @@ body {
       width: 35%;
       margin: 0 20px; }
     .cabeza .navegador .boton-navegador {
-      display: block; }
+      display: block;
+      padding-right: 50px; }
     .cabeza .navegador .menu-lista {
       margin: 0;
       padding: 20px 0;
@@ -102,6 +103,13 @@ body {
           font-size: 1.3em; }
     .cabeza .navegador .menu-lista-visible {
       left: 0%; } }
+
+@media screen and (max-width: 395px) {
+  .cabeza .navegador .link-logo {
+    justify-content: start; }
+  .cabeza .navegador .boton-navegador {
+    display: block;
+    padding-right: 20px; } }
 
 footer {
   display: grid;

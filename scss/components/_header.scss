@@ -82,6 +82,7 @@
             }
             .boton-navegador{
                 display: block;
+                padding-right: 50px;
             }
             .menu-lista{
                 margin: 0;
@@ -111,6 +112,19 @@
             }
             .menu-lista-visible{
                 left: 0%;
+            }
+        }
+    }
+}
+@media screen and (max-width:395px) {
+    .cabeza{
+        .navegador{
+            .link-logo{
+                justify-content: start;
+            }
+            .boton-navegador{
+                display: block;
+                padding-right: 20px;
             }
         }
     }
