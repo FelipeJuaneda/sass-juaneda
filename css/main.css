@@ -318,6 +318,9 @@ h1 .colonial {
   background-color: #2b303a;
   padding-top: 130px;
   height: 150vh; }
+  @media screen and (max-width: 768px) {
+    .decoracion-cont {
+      height: 100%; } }
   .decoracion-cont .decoracion {
     display: flex;
     justify-content: space-around; }

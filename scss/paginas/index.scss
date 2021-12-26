@@ -160,6 +160,9 @@ h1{
     background-color: $color-colonial;
     padding-top: 130px;
     height: 150vh;
+    @media screen and (max-width:768px) {
+        height: 100%;
+    }
     .decoracion{
         display: flex;
         justify-content: space-around;
