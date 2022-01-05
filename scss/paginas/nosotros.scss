@@ -56,6 +56,9 @@
 
 // Mixins - decoracion
 /* Mixins */
+#subtitulo-imgs{
+    color: $color-amarillo;
+}
 @mixin decoracion($imagen, $colorlineas, $colortitulo,$bottomh3, $lefth3, $transformh3:translateX(-280%), $fonth3:2em) {
     color: $colortitulo;
     width: 250px;

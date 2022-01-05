@@ -668,6 +668,9 @@ h1 .colonial {
             transition: 1s; } }
 
 /* Mixins */
+#subtitulo-imgs {
+  color: yellow; }
+
 .contenedor-decoracion1 {
   color: yellow;
   width: 250px;
