@@ -313,6 +313,16 @@ h1 .colonial {
         transition: all 1.35s; }
 
 /* wave */
+.contenedor-wave .wave {
+  height: 150px;
+  overflow: hidden; }
+  .contenedor-wave .wave svg {
+    height: 100%;
+    width: 100%; }
+    .contenedor-wave .wave svg path {
+      stroke: none;
+      fill: #2b303a; }
+
 /* Decoracion */
 .decoracion-cont {
   background-color: #2b303a;
@@ -923,6 +933,17 @@ h1 .colonial {
         .contenedor-servicio .row .col-12 .img-gral:hover {
           transform: scale(0.9);
           transition: 1s; } }
+
+/* Wave */
+.wave-servicio {
+  height: 150px;
+  overflow: hidden; }
+  .wave-servicio svg {
+    height: 100%;
+    width: 100%; }
+    .wave-servicio svg path {
+      stroke: none;
+      fill: #2b303a; }
 
 /* Imagen con texto */
 .contenedor-carta .carta-letrero {

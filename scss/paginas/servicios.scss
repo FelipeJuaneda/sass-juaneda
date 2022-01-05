@@ -26,6 +26,21 @@
     }
 }
 
+/* Wave */
+
+.wave-servicio{
+    height: 150px;
+    overflow: hidden;
+    svg{
+        height: 100%;
+        width: 100%;
+        path{
+            stroke: none;
+            fill: #2b303a;
+        }
+    }
+}
+
 /* Imagen con texto */
 .contenedor-carta{
     .carta-letrero{
