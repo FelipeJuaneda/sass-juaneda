@@ -211,8 +211,8 @@ h1 .colonial {
       border-radius: 10px;
       margin-left: 30px; }
       .contenedor-pasillo .contenedor-imgpasillo .pasillo .img-pasillo:hover {
-        transform: scale(1.1);
-        transition: all 1.35s; }
+        transform: scale(1.072);
+        transition: all 2.35s; }
   .contenedor-pasillo .contenedor-parrafo {
     display: grid;
     grid-template-rows: repeat(2, auto);
