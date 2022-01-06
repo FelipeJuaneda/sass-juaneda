@@ -34,8 +34,8 @@ body {
       justify-content: center;
       align-items: center; }
       .cabeza .navegador .link-logo .img-logo {
-        margin: 20px 20px;
-        width: 50%; }
+        margin: 0px 20px;
+        width: 45%; }
     .cabeza .navegador .boton-navegador {
       color: yellow;
       background: none;
